@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>실록 속 법전 — 조선 법전 계보</title><meta name="description" content="경국대전에서 대전회통까지, 조문이 쌓이고 바뀐 380년 — 중간 편찬물과 출처 표지로 따라간다">
+<script>(function(){var q=new URLSearchParams(location.search).get("theme");if(q==="light"||q==="dark"){localStorage.setItem("jcl-theme",q)}else if(q==="auto"){localStorage.removeItem("jcl-theme")}var v=localStorage.getItem("jcl-theme");if(v)document.documentElement.setAttribute("data-theme",v)})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--bg:#f8f7f4;--bg2:#efede8;--card:#ffffff;--line:#dedbd3;--line2:#ebe8e1;--fg:#1d1f24;--fg2:#5a5e68;--fg3:#8a8e98;
+--accent:#1f6f9a;--accent2:#b5603a;--k1:#1679a6;--k2:#b5603a;--k3:#7a56a3;--k4:#6a8030;--grid:#e6e3dc;--gap:#efede8;
+--shadow:0 1px 2px rgba(30,32,40,.05),0 6px 18px rgba(30,32,40,.05);
+--display:"Noto Serif KR","Source Serif 4",Georgia,serif;--body:"Noto Sans KR",-apple-system,"Segoe UI","Apple SD Gothic Neo",Roboto,sans-serif}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#1b1c1f;--bg2:#222326;--card:#232428;--line:#34363c;--line2:#2b2d32;--fg:#ebe9e4;--fg2:#b3b1aa;--fg3:#80827f;--accent:#6fb0d8;--accent2:#d08a62;--k1:#3a8cc0;--k2:#c4704a;--k3:#9474bd;--k4:#82964a;--grid:#2e3035;--gap:#26272b;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 20px rgba(0,0,0,.25)}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#1b1c1f;--bg2:#222326;--card:#232428;--line:#34363c;--line2:#2b2d32;--fg:#ebe9e4;--fg2:#b3b1aa;--fg3:#80827f;--accent:#6fb0d8;--accent2:#d08a62;--k1:#3a8cc0;--k2:#c4704a;--k3:#9474bd;--k4:#82964a;--grid:#2e3035;--gap:#26272b;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 20px rgba(0,0,0,.25)}
+*{box-sizing:border-box}html,body{max-width:100%;overflow-x:hidden}
+body{margin:0;font:16px/1.7 var(--body);background:var(--bg);color:var(--fg);overflow-wrap:anywhere;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:3px}:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:.55rem 1.1rem;display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
+header .brand{font-family:var(--display);font-weight:600;font-size:1.05rem;color:var(--fg)}
+header nav{display:flex;gap:.9rem;flex-wrap:wrap}header nav a{color:var(--fg2);font-size:.92rem;border-bottom:2px solid transparent}header nav a:hover{text-decoration:none;color:var(--fg)}header nav a.on{color:var(--fg);border-bottom-color:var(--accent2)}
+header .right{margin-left:auto;display:flex;gap:.6rem;align-items:center}
+header .lang{font-size:.88rem;color:var(--fg2);border:1px solid var(--line);border-radius:999px;padding:.15rem .7rem}header .lang:hover{text-decoration:none;color:var(--fg)}
+.theme{border:1px solid var(--line);background:transparent;color:var(--fg2);border-radius:999px;width:30px;height:30px;cursor:pointer;font-size:.9rem;line-height:1;padding:0}
+main{max-width:980px;margin:0 auto;padding:1.6rem 1.1rem 4rem;min-width:0}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(1.6rem,3.2vw,2.2rem);line-height:1.25;margin:.3rem 0 .6rem;text-wrap:balance}
+h2{font-family:var(--display);font-weight:600;font-size:1.25rem;line-height:1.3;margin:2.2rem 0 .7rem;padding-bottom:.35rem;border-bottom:1px solid var(--line);text-wrap:balance}
+.eyebrow{color:var(--fg3);font-size:.84rem;letter-spacing:.03em}
+.hero{padding:.6rem 0 1.2rem;border-bottom:1px solid var(--line);margin-bottom:1.2rem}.hero h1{font-size:clamp(1.9rem,4vw,2.6rem)}.lead{color:var(--fg2);font-size:1.08rem;max-width:68ch}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:.8rem;margin:.9rem 0 1.4rem}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.85rem 1rem .9rem;box-shadow:var(--shadow);color:var(--fg)}a.card:hover{text-decoration:none;border-color:var(--fg3)}
+.card b{display:block;margin-bottom:.15rem;color:var(--accent)}.card .yr{font-size:.8rem;color:var(--fg3)}.card small{display:block;color:var(--fg2);font-size:.88rem;line-height:1.5;margin-top:.3rem}
+:lang(ko) p,:lang(ko) li,:lang(ko) .lead,:lang(ko) blockquote,:lang(ko) figcaption,:lang(ko) .card small{word-break:keep-all;overflow-wrap:anywhere}
+.prose p,.prose ul,.prose blockquote{max-width:72ch}.prose p{margin:.8rem 0}.prose ul{padding-left:1.2rem}.prose li{margin:.3rem 0}
+blockquote{border-left:4px solid var(--accent);background:var(--bg2);border-radius:0 10px 10px 0;padding:.75rem 1.1rem;margin:.8rem 0 1.4rem}blockquote p{margin:0}
+table{border-collapse:collapse;width:100%;font-size:.9rem;margin:.6rem 0}th,td{border-bottom:1px solid var(--line2);padding:.42rem .6rem;text-align:left;vertical-align:top}
+thead th{color:var(--fg2);font-weight:600;font-size:.84rem;border-bottom:1px solid var(--line)}tbody tr:nth-child(even){background:color-mix(in srgb,var(--bg2) 55%,transparent)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--card);padding:0 .3rem;margin:.6rem 0 1rem}.wrap table{margin:0}.wrap th,.wrap td{overflow-wrap:normal;word-break:normal}.wrap th{white-space:nowrap}:lang(ko) .wrap td{word-break:keep-all}
+figure{margin:1.2rem 0;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1rem 1rem .8rem;box-shadow:var(--shadow)}
+figure h3{margin:0 0 .3rem;font-size:1rem}figcaption{font-size:.86rem;color:var(--fg2);margin-top:.5rem;line-height:1.5}
+.chart{overflow-x:auto}svg{max-width:100%;height:auto;display:block}svg text{font-family:var(--body);fill:var(--fg2);font-size:13px}svg .grid{stroke:var(--grid)}svg .ax{stroke:var(--line)}
+svg .hit:hover{stroke:var(--fg);stroke-width:1.5}svg .cell:hover{stroke:var(--fg);stroke-width:1.5}
+.legend{display:flex;gap:1rem;font-size:.85rem;color:var(--fg2);flex-wrap:wrap;margin:.2rem 0 .5rem}.legend span::before{content:"";display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:.35rem;vertical-align:-1px;background:var(--c)}
+.legend span.d::before{background:repeating-linear-gradient(90deg,var(--c) 0 4px,transparent 4px 7px);height:3px;vertical-align:3px}
+.legend span.h::before{background:repeating-linear-gradient(45deg,var(--fg3) 0 1.5px,transparent 1.5px 4px);border:1px solid var(--fg3)}
+details{margin-top:.6rem}summary{cursor:pointer;color:var(--fg2);font-size:.88rem}
+.pn{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:2.4rem;padding-top:1rem;font-size:.92rem}.pn a[rel=next]{margin-left:auto;text-align:right}.pn small{display:block;color:var(--fg3)}
+.files a{display:inline-block;font-size:.85rem;background:var(--bg2);border:1px solid var(--line2);border-radius:6px;padding:.15rem .55rem;margin:.2rem .3rem .2rem 0;color:var(--fg2)}
+footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;padding:1.2rem;text-align:center}
+@media(max-width:640px){.chart svg{min-width:640px}.chart svg text{font-size:13px}header{gap:.6rem}}
+</style></head><body>
+<header><a class="brand" href="../ko/index.html">조선 법전 계보</a><nav><a href="../ko/index.html">처음</a><a href="../ko/ch2.html">장</a><a href="../ko/sillok.html" class="on">실록 속 법전</a><a href="../ko/reliability.html">신뢰도</a><a href="../ko/method.html">방법</a><a href="../ko/data.html">데이터</a></nav>
+<div class="right"><button id="theme" class="theme" type="button" aria-label="테마">◑</button><a class="lang" href="../en/sillok.html">English</a></div></header>
+<main><h1>실록 속 법전</h1><div class="prose"><blockquote>
+<p><strong>핵심.</strong> 실록 본문(본실록 27대 378,684기사)에서 법전 이름이 나오는 기사는 507건이다. 이름은 대개 그 책이 편찬된 왕대와 다음 왕대에 몰린다. 『대전회통』은 고종대에만 47건 나온다.</p>
+</blockquote>
+<figure id="F-sillok"><h3>실록 기사 가운데 법전 이름이 나오는 기사, 왕대별</h3><div class="legend"><span style="--c:var(--k1)">經國大典</span><span style="--c:var(--k2)">大典續錄·後續錄</span><span style="--c:var(--k3)">續大典·大典通編</span><span style="--c:var(--k4)">大典會通</span></div><div class="chart"><svg viewBox="0 0 900 330" role="img"><line class="grid" x1="70" y1="268.0" x2="884" y2="268.0"/><text x="64" y="272.0" text-anchor="end">0</text><line class="grid" x1="70" y1="185.4" x2="884" y2="185.4"/><text x="64" y="189.4" text-anchor="end">20</text><line class="grid" x1="70" y1="102.7" x2="884" y2="102.7"/><text x="64" y="106.7" text-anchor="end">40</text><line class="grid" x1="70" y1="20.1" x2="884" y2="20.1"/><text x="64" y="24.1" text-anchor="end">60</text><rect class="hit" x="73.1" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k1)"><title>태조 · 經國大典 · 0</title></rect><rect class="hit" x="79.6" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k2)"><title>태조 · 大典續錄·後續錄 · 0</title></rect><rect class="hit" x="86.1" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k3)"><title>태조 · 續大典·大典通編 · 0</title></rect><rect class="hit" x="92.6" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>태조 · 大典會通 · 0</title></rect><text x="85.1" y="282.0" text-anchor="end" transform="rotate(-50 85.1 282.0)">태조</text><rect class="hit" x="103.3" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k1)"><title>정종 · 經國大典 · 0</title></rect><rect class="hit" x="109.7" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k2)"><title>정종 · 大典續錄·後續錄 · 0</title></rect><rect class="hit" x="116.2" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k3)"><title>정종 · 續大典·大典通編 · 0</title></rect><rect class="hit" x="122.7" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>정종 · 大典會通 · 0</title></rect><text x="115.2" y="282.0" text-anchor="end" transform="rotate(-50 115.2 282.0)">정종</text><rect class="hit" x="133.4" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k1)"><title>태종 · 經國大典 · 0</title></rect><rect class="hit" x="139.9" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k2)"><title>태종 · 大典續錄·後續錄 · 0</title></rect><rect class="hit" x="146.4" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k3)"><title>태종 · 續大典·大典通編 · 0</title></rect><rect class="hit" x="152.9" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>태종 · 大典會通 · 0</title></rect><text x="145.4" y="282.0" text-anchor="end" transform="rotate(-50 145.4 282.0)">태종</text><rect class="hit" x="163.6" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k1)"><title>세종 · 經國大典 · 0</title></rect><rect class="hit" x="170.0" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k2)"><title>세종 · 大典續錄·後續錄 · 0</title></rect><rect class="hit" x="176.5" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k3)"><title>세종 · 續大典·大典通編 · 0</title></rect><rect class="hit" x="183.0" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>세종 · 大典會通 · 0</title></rect><text x="175.5" y="282.0" text-anchor="end" transform="rotate(-50 175.5 282.0)">세종</text><rect class="hit" x="193.7" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k1)"><title>문종 · 經國大典 · 0</title></rect><rect class="hit" x="200.2" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k2)"><title>문종 · 大典續錄·後續錄 · 0</title></rect><rect class="hit" x="206.7" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k3)"><title>문종 · 續大典·大典通編 · 0</title></rect><rect class="hit" x="213.1" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>문종 · 大典會通 · 0</title></rect><text x="205.7" y="282.0" text-anchor="end" transform="rotate(-50 205.7 282.0)">문종</text><rect class="hit" x="223.9" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k1)"><title>단종 · 經國大典 · 0</title></rect><rect class="hit" x="230.3" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k2)"><title>단종 · 大典續錄·後續錄 · 0</title></rect><rect class="hit" x="236.8" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k3)"><title>단종 · 續大典·大典通編 · 0</title></rect><rect class="hit" x="243.3" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>단종 · 大典會通 · 0</title></rect><text x="235.8" y="282.0" text-anchor="end" transform="rotate(-50 235.8 282.0)">단종</text><rect class="hit" x="254.0" y="168.8" width="4.5" height="99.2" rx="1.5" fill="var(--k1)"><title>세조 · 經國大典 · 24</title></rect><rect class="hit" x="260.5" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k2)"><title>세조 · 大典續錄·後續錄 · 0</title></rect><rect class="hit" x="267.0" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k3)"><title>세조 · 續大典·大典通編 · 0</title></rect><rect class="hit" x="273.4" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>세조 · 大典會通 · 0</title></rect><text x="266.0" y="282.0" text-anchor="end" transform="rotate(-50 266.0 282.0)">세조</text><rect class="hit" x="284.1" y="247.3" width="4.5" height="20.7" rx="1.5" fill="var(--k1)"><title>예종 · 經國大典 · 5</title></rect><rect class="hit" x="290.6" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k2)"><title>예종 · 大典續錄·後續錄 · 0</title></rect><rect class="hit" x="297.1" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k3)"><title>예종 · 續大典·大典通編 · 0</title></rect><rect class="hit" x="303.6" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>예종 · 大典會通 · 0</title></rect><text x="296.1" y="282.0" text-anchor="end" transform="rotate(-50 296.1 282.0)">예종</text><rect class="hit" x="314.3" y="168.8" width="4.5" height="99.2" rx="1.5" fill="var(--k1)"><title>성종 · 經國大典 · 24</title></rect><rect class="hit" x="320.8" y="119.2" width="4.5" height="148.8" rx="1.5" fill="var(--k2)"><title>성종 · 大典續錄·後續錄 · 36</title></rect><rect class="hit" x="327.3" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k3)"><title>성종 · 續大典·大典通編 · 0</title></rect><rect class="hit" x="333.7" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>성종 · 大典會通 · 0</title></rect><text x="326.3" y="282.0" text-anchor="end" transform="rotate(-50 326.3 282.0)">성종</text><rect class="hit" x="344.4" y="259.7" width="4.5" height="8.3" rx="1.5" fill="var(--k1)"><title>연산군 · 經國大典 · 2</title></rect><rect class="hit" x="350.9" y="234.9" width="4.5" height="33.1" rx="1.5" fill="var(--k2)"><title>연산군 · 大典續錄·後續錄 · 8</title></rect><rect class="hit" x="357.4" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k3)"><title>연산군 · 續大典·大典通編 · 0</title></rect><rect class="hit" x="363.9" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>연산군 · 大典會通 · 0</title></rect><text x="356.4" y="282.0" text-anchor="end" transform="rotate(-50 356.4 282.0)">연산군</text><rect class="hit" x="374.6" y="234.9" width="4.5" height="33.1" rx="1.5" fill="var(--k1)"><title>중종 · 經國大典 · 8</title></rect><rect class="hit" x="381.1" y="44.9" width="4.5" height="223.1" rx="1.5" fill="var(--k2)"><title>중종 · 大典續錄·後續錄 · 54</title></rect><rect class="hit" x="387.6" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k3)"><title>중종 · 續大典·大典通編 · 0</title></rect><rect class="hit" x="394.0" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>중종 · 大典會通 · 0</title></rect><text x="386.6" y="282.0" text-anchor="end" transform="rotate(-50 386.6 282.0)">중종</text><rect class="hit" x="404.7" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k1)"><title>인종 · 經國大典 · 0</title></rect><rect class="hit" x="411.2" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k2)"><title>인종 · 大典續錄·後續錄 · 0</title></rect><rect class="hit" x="417.7" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k3)"><title>인종 · 續大典·大典通編 · 0</title></rect><rect class="hit" x="424.2" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>인종 · 大典會通 · 0</title></rect><text x="416.7" y="282.0" text-anchor="end" transform="rotate(-50 416.7 282.0)">인종</text><rect class="hit" x="434.9" y="243.2" width="4.5" height="24.8" rx="1.5" fill="var(--k1)"><title>명종 · 經國大典 · 6</title></rect><rect class="hit" x="441.4" y="173.0" width="4.5" height="95.0" rx="1.5" fill="var(--k2)"><title>명종 · 大典續錄·後續錄 · 23</title></rect><rect class="hit" x="447.9" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k3)"><title>명종 · 續大典·大典通編 · 0</title></rect><rect class="hit" x="454.3" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>명종 · 大典會通 · 0</title></rect><text x="446.9" y="282.0" text-anchor="end" transform="rotate(-50 446.9 282.0)">명종</text><rect class="hit" x="465.0" y="255.6" width="4.5" height="12.4" rx="1.5" fill="var(--k1)"><title>선조 · 經國大典 · 3</title></rect><rect class="hit" x="471.5" y="251.5" width="4.5" height="16.5" rx="1.5" fill="var(--k2)"><title>선조 · 大典續錄·後續錄 · 4</title></rect><rect class="hit" x="478.0" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k3)"><title>선조 · 續大典·大典通編 · 0</title></rect><rect class="hit" x="484.5" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>선조 · 大典會通 · 0</title></rect><text x="477.0" y="282.0" text-anchor="end" transform="rotate(-50 477.0 282.0)">선조</text><rect class="hit" x="495.2" y="259.7" width="4.5" height="8.3" rx="1.5" fill="var(--k1)"><title>광해군 · 經國大典 · 2</title></rect><rect class="hit" x="501.7" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k2)"><title>광해군 · 大典續錄·後續錄 · 0</title></rect><rect class="hit" x="508.1" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k3)"><title>광해군 · 續大典·大典通編 · 0</title></rect><rect class="hit" x="514.6" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>광해군 · 大典會通 · 0</title></rect><text x="507.1" y="282.0" text-anchor="end" transform="rotate(-50 507.1 282.0)">광해군</text><rect class="hit" x="525.3" y="259.7" width="4.5" height="8.3" rx="1.5" fill="var(--k1)"><title>인조 · 經國大典 · 2</title></rect><rect class="hit" x="531.8" y="251.5" width="4.5" height="16.5" rx="1.5" fill="var(--k2)"><title>인조 · 大典續錄·後續錄 · 4</title></rect><rect class="hit" x="538.3" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k3)"><title>인조 · 續大典·大典通編 · 0</title></rect><rect class="hit" x="544.8" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>인조 · 大典會通 · 0</title></rect><text x="537.3" y="282.0" text-anchor="end" transform="rotate(-50 537.3 282.0)">인조</text><rect class="hit" x="555.5" y="259.7" width="4.5" height="8.3" rx="1.5" fill="var(--k1)"><title>효종 · 經國大典 · 2</title></rect><rect class="hit" x="562.0" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k2)"><title>효종 · 大典續錄·後續錄 · 0</title></rect><rect class="hit" x="568.4" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k3)"><title>효종 · 續大典·大典通編 · 0</title></rect><rect class="hit" x="574.9" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>효종 · 大典會通 · 0</title></rect><text x="567.4" y="282.0" text-anchor="end" transform="rotate(-50 567.4 282.0)">효종</text><rect class="hit" x="585.6" y="259.7" width="4.5" height="8.3" rx="1.5" fill="var(--k1)"><title>현종 · 經國大典 · 2</title></rect><rect class="hit" x="592.1" y="247.3" width="4.5" height="20.7" rx="1.5" fill="var(--k2)"><title>현종 · 大典續錄·後續錄 · 5</title></rect><rect class="hit" x="598.6" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k3)"><title>현종 · 續大典·大典通編 · 0</title></rect><rect class="hit" x="605.1" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>현종 · 大典會通 · 0</title></rect><text x="597.6" y="282.0" text-anchor="end" transform="rotate(-50 597.6 282.0)">현종</text><rect class="hit" x="615.8" y="230.8" width="4.5" height="37.2" rx="1.5" fill="var(--k1)"><title>숙종 · 經國大典 · 9</title></rect><rect class="hit" x="622.3" y="239.1" width="4.5" height="28.9" rx="1.5" fill="var(--k2)"><title>숙종 · 大典續錄·後續錄 · 7</title></rect><rect class="hit" x="628.7" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k3)"><title>숙종 · 續大典·大典通編 · 0</title></rect><rect class="hit" x="635.2" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>숙종 · 大典會通 · 0</title></rect><text x="627.7" y="282.0" text-anchor="end" transform="rotate(-50 627.7 282.0)">숙종</text><rect class="hit" x="645.9" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k1)"><title>경종 · 經國大典 · 0</title></rect><rect class="hit" x="652.4" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k2)"><title>경종 · 大典續錄·後續錄 · 0</title></rect><rect class="hit" x="658.9" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k3)"><title>경종 · 續大典·大典通編 · 0</title></rect><rect class="hit" x="665.4" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>경종 · 大典會通 · 0</title></rect><text x="657.9" y="282.0" text-anchor="end" transform="rotate(-50 657.9 282.0)">경종</text><rect class="hit" x="676.1" y="218.4" width="4.5" height="49.6" rx="1.5" fill="var(--k1)"><title>영조 · 經國大典 · 12</title></rect><rect class="hit" x="682.6" y="263.9" width="4.5" height="4.1" rx="1.5" fill="var(--k2)"><title>영조 · 大典續錄·後續錄 · 1</title></rect><rect class="hit" x="689.0" y="115.1" width="4.5" height="152.9" rx="1.5" fill="var(--k3)"><title>영조 · 續大典·大典通編 · 37</title></rect><rect class="hit" x="695.5" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>영조 · 大典會通 · 0</title></rect><text x="688.0" y="282.0" text-anchor="end" transform="rotate(-50 688.0 282.0)">영조</text><rect class="hit" x="706.2" y="210.1" width="4.5" height="57.9" rx="1.5" fill="var(--k1)"><title>정조 · 經國大典 · 14</title></rect><rect class="hit" x="712.7" y="243.2" width="4.5" height="24.8" rx="1.5" fill="var(--k2)"><title>정조 · 大典續錄·後續錄 · 6</title></rect><rect class="hit" x="719.2" y="40.7" width="4.5" height="227.3" rx="1.5" fill="var(--k3)"><title>정조 · 續大典·大典通編 · 55</title></rect><rect class="hit" x="725.7" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>정조 · 大典會通 · 0</title></rect><text x="718.2" y="282.0" text-anchor="end" transform="rotate(-50 718.2 282.0)">정조</text><rect class="hit" x="736.4" y="259.7" width="4.5" height="8.3" rx="1.5" fill="var(--k1)"><title>순조 · 經國大典 · 2</title></rect><rect class="hit" x="742.9" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k2)"><title>순조 · 大典續錄·後續錄 · 0</title></rect><rect class="hit" x="749.3" y="222.5" width="4.5" height="45.5" rx="1.5" fill="var(--k3)"><title>순조 · 續大典·大典通編 · 11</title></rect><rect class="hit" x="755.8" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>순조 · 大典會通 · 0</title></rect><text x="748.3" y="282.0" text-anchor="end" transform="rotate(-50 748.3 282.0)">순조</text><rect class="hit" x="766.5" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k1)"><title>헌종 · 經國大典 · 0</title></rect><rect class="hit" x="773.0" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k2)"><title>헌종 · 大典續錄·後續錄 · 0</title></rect><rect class="hit" x="779.5" y="263.9" width="4.5" height="4.1" rx="1.5" fill="var(--k3)"><title>헌종 · 續大典·大典通編 · 1</title></rect><rect class="hit" x="786.0" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>헌종 · 大典會通 · 0</title></rect><text x="778.5" y="282.0" text-anchor="end" transform="rotate(-50 778.5 282.0)">헌종</text><rect class="hit" x="796.7" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k1)"><title>철종 · 經國大典 · 0</title></rect><rect class="hit" x="803.1" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k2)"><title>철종 · 大典續錄·後續錄 · 0</title></rect><rect class="hit" x="809.6" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k3)"><title>철종 · 續大典·大典通編 · 0</title></rect><rect class="hit" x="816.1" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>철종 · 大典會通 · 0</title></rect><text x="808.6" y="282.0" text-anchor="end" transform="rotate(-50 808.6 282.0)">철종</text><rect class="hit" x="826.8" y="259.7" width="4.5" height="8.3" rx="1.5" fill="var(--k1)"><title>고종 · 經國大典 · 2</title></rect><rect class="hit" x="833.3" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k2)"><title>고종 · 大典續錄·後續錄 · 0</title></rect><rect class="hit" x="839.8" y="247.3" width="4.5" height="20.7" rx="1.5" fill="var(--k3)"><title>고종 · 續大典·大典通編 · 5</title></rect><rect class="hit" x="846.3" y="73.8" width="4.5" height="194.2" rx="1.5" fill="var(--k4)"><title>고종 · 大典會通 · 47</title></rect><text x="838.8" y="282.0" text-anchor="end" transform="rotate(-50 838.8 282.0)">고종</text><rect class="hit" x="857.0" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k1)"><title>순종 · 經國大典 · 0</title></rect><rect class="hit" x="863.4" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k2)"><title>순종 · 大典續錄·後續錄 · 0</title></rect><rect class="hit" x="869.9" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k3)"><title>순종 · 續大典·大典通編 · 0</title></rect><rect class="hit" x="876.4" y="268.0" width="4.5" height="0.0" rx="1.5" fill="var(--k4)"><title>순종 · 大典會通 · 0</title></rect><text x="868.9" y="282.0" text-anchor="end" transform="rotate(-50 868.9 282.0)">순종</text></svg></div><figcaption>본실록(광해군은 중초본) 원문 기준, 국사편찬위원회 번역주 제외. 한 기사에 여러 번 나와도 1로 셌고, 두 법전을 묶은 막대는 둘 가운데 하나라도 나오는 기사 수다. 막대는 왕대 순서이고 왕대 길이는 반영하지 않는다(기사 총수는 표에). 『경제육전』은 표에만 둔다. 영조 이전의 「續大典」은 1746년 법전이 아니라 따로 셌다.</figcaption><details><summary>표로 보기</summary><div class="wrap"><div class="wrap"><table><thead><tr><th>왕대</th><th>기사</th><th>經濟六典</th><th>經國大典</th><th>大典續錄</th><th>後續錄</th><th>續錄·後續錄</th><th>受敎輯錄</th><th>典錄通考</th><th>續大典</th><th>大典通編</th><th>續大典·通編</th><th>大典會通</th><th>언급 기사</th></tr></thead><tbody><tr><td>태조</td><td class="num">2,387</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1</td></tr><tr><td>정종</td><td class="num">626</td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">4</td></tr><tr><td>태종</td><td class="num">10,338</td><td class="num">28</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">28</td></tr><tr><td>세종</td><td class="num">32,281</td><td class="num">20</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">20</td></tr><tr><td>문종</td><td class="num">2,672</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr><tr><td>단종</td><td class="num">2,547</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1</td></tr><tr><td>세조</td><td class="num">10,901</td><td class="num">0</td><td class="num">24</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">24</td></tr><tr><td>예종</td><td class="num">1,504</td><td class="num">0</td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">5</td></tr><tr><td>성종</td><td class="num">32,444</td><td class="num">12</td><td class="num">24</td><td class="num">36</td><td class="num">0</td><td class="num">36</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">72</td></tr><tr><td>연산군</td><td class="num">12,010</td><td class="num">3</td><td class="num">2</td><td class="num">8</td><td class="num">0</td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">13</td></tr><tr><td>중종</td><td class="num">39,660</td><td class="num">13</td><td class="num">8</td><td class="num">13</td><td class="num">42</td><td class="num">54</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">75</td></tr><tr><td>인종</td><td class="num">672</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr><tr><td>명종</td><td class="num">15,045</td><td class="num">10</td><td class="num">6</td><td class="num">4</td><td class="num">19</td><td class="num">23</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">34</td></tr><tr><td>선조</td><td class="num">26,716</td><td class="num">1</td><td class="num">3</td><td class="num">1</td><td class="num">3</td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">8</td></tr><tr><td>광해군</td><td class="num">22,121</td><td class="num">1</td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">2</td></tr><tr><td>인조</td><td class="num">16,047</td><td class="num">0</td><td class="num">2</td><td class="num">2</td><td class="num">2</td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">6</td></tr><tr><td>효종</td><td class="num">5,433</td><td class="num">0</td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">2</td></tr><tr><td>현종</td><td class="num">9,296</td><td class="num">0</td><td class="num">2</td><td class="num">2</td><td class="num">3</td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">7</td></tr><tr><td>숙종</td><td class="num">24,209</td><td class="num">2</td><td class="num">9</td><td class="num">5</td><td class="num">2</td><td class="num">7</td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">21</td></tr><tr><td>경종</td><td class="num">2,744</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr><tr><td>영조</td><td class="num">36,732</td><td class="num">0</td><td class="num">12</td><td class="num">0</td><td class="num">1</td><td class="num">1</td><td class="num">6</td><td class="num">5</td><td class="num">37</td><td class="num">0</td><td class="num">37</td><td class="num">0</td><td class="num">52</td></tr><tr><td>정조</td><td class="num">17,682</td><td class="num">1</td><td class="num">14</td><td class="num">4</td><td class="num">3</td><td class="num">6</td><td class="num">2</td><td class="num">0</td><td class="num">14</td><td class="num">44</td><td class="num">55</td><td class="num">0</td><td class="num">67</td></tr><tr><td>순조</td><td class="num">15,530</td><td class="num">0</td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">3</td><td class="num">9</td><td class="num">11</td><td class="num">0</td><td class="num">12</td></tr><tr><td>헌종</td><td class="num">3,987</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr><tr><td>철종</td><td class="num">5,772</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr><tr><td>고종</td><td class="num">27,940</td><td class="num">0</td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td class="num">4</td><td class="num">5</td><td class="num">47</td><td class="num">52</td></tr><tr><td>순종</td><td class="num">1,388</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr></tbody></table></div></div></details></figure>
+<h2>센 방법</h2>
+<ul>
+<li><strong>원천:</strong> 국사편찬위원회 「조선왕조실록 정보」 개방 데이터(공공데이터포털 15053647, 공공누리 제1유형). 고종·순종실록(15053646, 제4유형)은 세기만 하고 인용하지 않는다.</li>
+<li><strong>단위:</strong> 기사. 한 기사에 같은 이름이 여러 번 나와도 1로 셌다.</li>
+<li><strong>본문:</strong> 실록 원문만. 국사편찬위원회 번역주(〔譯注 …〕)는 뺐다.</li>
+<li><strong>이름:</strong> 전체 서명만 셌다. 긴 서명 안의 짧은 서명은 세지 않는다(「續大典」 안의 「大典」, 「新補受敎輯錄」 안의 「受敎輯錄」). 『대전후속록』은 「後續錄」으로 셌다. 「大典」·「續錄」·「通編」만 있는 경우는 가리키는 책이 문맥마다 달라 세지 않았다.</li>
+<li><strong>판본:</strong> 왕대마다 한 판본(본실록, 광해군은 중초본). 수정·개수실록은 따로 세어 데이터에 두었다.</li>
+</ul>
+<h2>영조 이전의 「續大典」</h2>
+<p>연산군일기 6년의 「《元》ㆍ《續大典》」은 1746년 『속대전』이 아니라 『경국대전』과 그 속록을 가리킨다. 숙종실록보궐정오 14년의 「名曰《續大典》」은 그때 제안된 서명이다. 이 사이트는 영조실록보다 앞선 「續大典」을 따로 세어 그림에서 뺐다.</p>
+<h2>무엇을 말하지 않는가</h2>
+<p>언급 기사 수는 그 법전이 얼마나 쓰였는지를 재는 값이 아니다. 편찬·반포를 알리는 기사와 재판에서 조문을 인용하는 기사를 가르지 않았다. 『신보수교집록』·『증보전록통고』·『전율통보』는 실록에 이름이 한 번도 나오지 않지만, 그렇다고 쓰이지 않았다고 말할 수는 없다.</p>
+<h2>왕대별 수</h2>
+<div class="wrap"><table>
+<thead>
+<tr>
+<th>왕대</th>
+<th style="text-align: right;">經濟六典</th>
+<th style="text-align: right;">經國大典</th>
+<th style="text-align: right;">大典續錄</th>
+<th style="text-align: right;">後續錄</th>
+<th style="text-align: right;">受敎輯錄</th>
+<th style="text-align: right;">典錄通考</th>
+<th style="text-align: right;">續大典</th>
+<th style="text-align: right;">大典通編</th>
+<th style="text-align: right;">大典會通</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>태종</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td>세종</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td>세조</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td>성종</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td>연산군</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td>중종</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td>명종</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td>숙종</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td>영조</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td>정조</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td>순조</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td>고종</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">47</td>
+</tr>
+</tbody>
+</table></div>
+<p>법전 이름이 나오는 기사가 8건 이하인 왕대는 이 표에서 뺐다. 전체는 데이터 면의 <code>sillok_code_mentions.csv</code> 에 있다.</p></div></main>
+<footer>조선 법전 계보 · 판 0.9 · 생성 2026-11-14 · <a href="https://github.com/BowonKwon/Joseon-Code-Lineage">GitHub</a> · 다른 사이트 <a href="https://bowonkwon.github.io/">bowonkwon.github.io</a></footer>
+<script>(function(){var k="jcl-theme",r=document.documentElement,b=document.getElementById("theme");function ap(v){if(v)r.setAttribute("data-theme",v);else r.removeAttribute("data-theme");if(b)b.textContent=v==="dark"?"\u263E":v==="light"?"\u2600":"\u25D1"}var cur=localStorage.getItem(k)||"";ap(cur);if(b)b.addEventListener("click",function(){cur=cur===""?"light":cur==="light"?"dark":"";if(cur)localStorage.setItem(k,cur);else localStorage.removeItem(k);ap(cur)})})();</script></body></html>

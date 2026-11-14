@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>방법 — 조선 법전 계보</title><meta name="description" content="경국대전에서 대전회통까지, 조문이 쌓이고 바뀐 380년 — 중간 편찬물과 출처 표지로 따라간다">
+<script>(function(){var q=new URLSearchParams(location.search).get("theme");if(q==="light"||q==="dark"){localStorage.setItem("jcl-theme",q)}else if(q==="auto"){localStorage.removeItem("jcl-theme")}var v=localStorage.getItem("jcl-theme");if(v)document.documentElement.setAttribute("data-theme",v)})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--bg:#f8f7f4;--bg2:#efede8;--card:#ffffff;--line:#dedbd3;--line2:#ebe8e1;--fg:#1d1f24;--fg2:#5a5e68;--fg3:#8a8e98;
+--accent:#1f6f9a;--accent2:#b5603a;--k1:#1679a6;--k2:#b5603a;--k3:#7a56a3;--k4:#6a8030;--grid:#e6e3dc;--gap:#efede8;
+--shadow:0 1px 2px rgba(30,32,40,.05),0 6px 18px rgba(30,32,40,.05);
+--display:"Noto Serif KR","Source Serif 4",Georgia,serif;--body:"Noto Sans KR",-apple-system,"Segoe UI","Apple SD Gothic Neo",Roboto,sans-serif}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#1b1c1f;--bg2:#222326;--card:#232428;--line:#34363c;--line2:#2b2d32;--fg:#ebe9e4;--fg2:#b3b1aa;--fg3:#80827f;--accent:#6fb0d8;--accent2:#d08a62;--k1:#3a8cc0;--k2:#c4704a;--k3:#9474bd;--k4:#82964a;--grid:#2e3035;--gap:#26272b;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 20px rgba(0,0,0,.25)}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#1b1c1f;--bg2:#222326;--card:#232428;--line:#34363c;--line2:#2b2d32;--fg:#ebe9e4;--fg2:#b3b1aa;--fg3:#80827f;--accent:#6fb0d8;--accent2:#d08a62;--k1:#3a8cc0;--k2:#c4704a;--k3:#9474bd;--k4:#82964a;--grid:#2e3035;--gap:#26272b;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 20px rgba(0,0,0,.25)}
+*{box-sizing:border-box}html,body{max-width:100%;overflow-x:hidden}
+body{margin:0;font:16px/1.7 var(--body);background:var(--bg);color:var(--fg);overflow-wrap:anywhere;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:3px}:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:.55rem 1.1rem;display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
+header .brand{font-family:var(--display);font-weight:600;font-size:1.05rem;color:var(--fg)}
+header nav{display:flex;gap:.9rem;flex-wrap:wrap}header nav a{color:var(--fg2);font-size:.92rem;border-bottom:2px solid transparent}header nav a:hover{text-decoration:none;color:var(--fg)}header nav a.on{color:var(--fg);border-bottom-color:var(--accent2)}
+header .right{margin-left:auto;display:flex;gap:.6rem;align-items:center}
+header .lang{font-size:.88rem;color:var(--fg2);border:1px solid var(--line);border-radius:999px;padding:.15rem .7rem}header .lang:hover{text-decoration:none;color:var(--fg)}
+.theme{border:1px solid var(--line);background:transparent;color:var(--fg2);border-radius:999px;width:30px;height:30px;cursor:pointer;font-size:.9rem;line-height:1;padding:0}
+main{max-width:980px;margin:0 auto;padding:1.6rem 1.1rem 4rem;min-width:0}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(1.6rem,3.2vw,2.2rem);line-height:1.25;margin:.3rem 0 .6rem;text-wrap:balance}
+h2{font-family:var(--display);font-weight:600;font-size:1.25rem;line-height:1.3;margin:2.2rem 0 .7rem;padding-bottom:.35rem;border-bottom:1px solid var(--line);text-wrap:balance}
+.eyebrow{color:var(--fg3);font-size:.84rem;letter-spacing:.03em}
+.hero{padding:.6rem 0 1.2rem;border-bottom:1px solid var(--line);margin-bottom:1.2rem}.hero h1{font-size:clamp(1.9rem,4vw,2.6rem)}.lead{color:var(--fg2);font-size:1.08rem;max-width:68ch}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:.8rem;margin:.9rem 0 1.4rem}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.85rem 1rem .9rem;box-shadow:var(--shadow);color:var(--fg)}a.card:hover{text-decoration:none;border-color:var(--fg3)}
+.card b{display:block;margin-bottom:.15rem;color:var(--accent)}.card .yr{font-size:.8rem;color:var(--fg3)}.card small{display:block;color:var(--fg2);font-size:.88rem;line-height:1.5;margin-top:.3rem}
+:lang(ko) p,:lang(ko) li,:lang(ko) .lead,:lang(ko) blockquote,:lang(ko) figcaption,:lang(ko) .card small{word-break:keep-all;overflow-wrap:anywhere}
+.prose p,.prose ul,.prose blockquote{max-width:72ch}.prose p{margin:.8rem 0}.prose ul{padding-left:1.2rem}.prose li{margin:.3rem 0}
+blockquote{border-left:4px solid var(--accent);background:var(--bg2);border-radius:0 10px 10px 0;padding:.75rem 1.1rem;margin:.8rem 0 1.4rem}blockquote p{margin:0}
+table{border-collapse:collapse;width:100%;font-size:.9rem;margin:.6rem 0}th,td{border-bottom:1px solid var(--line2);padding:.42rem .6rem;text-align:left;vertical-align:top}
+thead th{color:var(--fg2);font-weight:600;font-size:.84rem;border-bottom:1px solid var(--line)}tbody tr:nth-child(even){background:color-mix(in srgb,var(--bg2) 55%,transparent)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--card);padding:0 .3rem;margin:.6rem 0 1rem}.wrap table{margin:0}.wrap th,.wrap td{overflow-wrap:normal;word-break:normal}.wrap th{white-space:nowrap}:lang(ko) .wrap td{word-break:keep-all}
+figure{margin:1.2rem 0;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1rem 1rem .8rem;box-shadow:var(--shadow)}
+figure h3{margin:0 0 .3rem;font-size:1rem}figcaption{font-size:.86rem;color:var(--fg2);margin-top:.5rem;line-height:1.5}
+.chart{overflow-x:auto}svg{max-width:100%;height:auto;display:block}svg text{font-family:var(--body);fill:var(--fg2);font-size:13px}svg .grid{stroke:var(--grid)}svg .ax{stroke:var(--line)}
+svg .hit:hover{stroke:var(--fg);stroke-width:1.5}svg .cell:hover{stroke:var(--fg);stroke-width:1.5}
+.legend{display:flex;gap:1rem;font-size:.85rem;color:var(--fg2);flex-wrap:wrap;margin:.2rem 0 .5rem}.legend span::before{content:"";display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:.35rem;vertical-align:-1px;background:var(--c)}
+.legend span.d::before{background:repeating-linear-gradient(90deg,var(--c) 0 4px,transparent 4px 7px);height:3px;vertical-align:3px}
+.legend span.h::before{background:repeating-linear-gradient(45deg,var(--fg3) 0 1.5px,transparent 1.5px 4px);border:1px solid var(--fg3)}
+details{margin-top:.6rem}summary{cursor:pointer;color:var(--fg2);font-size:.88rem}
+.pn{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:2.4rem;padding-top:1rem;font-size:.92rem}.pn a[rel=next]{margin-left:auto;text-align:right}.pn small{display:block;color:var(--fg3)}
+.files a{display:inline-block;font-size:.85rem;background:var(--bg2);border:1px solid var(--line2);border-radius:6px;padding:.15rem .55rem;margin:.2rem .3rem .2rem 0;color:var(--fg2)}
+footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;padding:1.2rem;text-align:center}
+@media(max-width:640px){.chart svg{min-width:640px}.chart svg text{font-size:13px}header{gap:.6rem}}
+</style></head><body>
+<header><a class="brand" href="../ko/index.html">조선 법전 계보</a><nav><a href="../ko/index.html">처음</a><a href="../ko/ch2.html">장</a><a href="../ko/sillok.html">실록 속 법전</a><a href="../ko/reliability.html">신뢰도</a><a href="../ko/method.html" class="on">방법</a><a href="../ko/data.html">데이터</a></nav>
+<div class="right"><button id="theme" class="theme" type="button" aria-label="테마">◑</button><a class="lang" href="../en/method.html">English</a></div></header>
+<main><h1>방법</h1><div class="prose"><h2>원천</h2>
+<div class="wrap"><table>
+<thead>
+<tr>
+<th>원천</th>
+<th>쓴 곳</th>
+<th>이용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>국사편찬위원회 「조선시대 법령자료」 개방 데이터(공공데이터포털 15060103) — 『大典續錄』·『大典後續錄』·『受敎輯錄』·『典錄通考』·『新補受敎輯錄』·『增補典錄通考』·『典律通補』 XML</td>
+<td>모든 장</td>
+<td>포털 표기는 공공누리 제1유형이나 설명문과 어긋나는 데가 있어, 이 판은 집계·ID·표지·한자 수·짧은 인용만 싣는다</td>
+</tr>
+<tr>
+<td>국사편찬위원회 「조선왕조실록 정보」 개방 데이터(15053647, 공공누리 제1유형), 고종·순종실록(15053646, 제4유형)</td>
+<td>실록 속 법전, 왕대 경계</td>
+<td>고종·순종실록은 세기만 한다</td>
+</tr>
+<tr>
+<td>규장각한국학연구원 원문검색서비스 『典律通補』(GK01377) 면 이미지</td>
+<td>신뢰도 1·2</td>
+<td>열람만 했다. 이미지를 싣지 않는다</td>
+</tr>
+<tr>
+<td>한국민족문화대백과사전</td>
+<td>법전 연도, 후속록 항목 수</td>
+<td>2차 정보로 표시</td>
+</tr>
+</tbody>
+</table></div>
+<p>이 개방 데이터에는 『경국대전』·『속대전』·『대전통편』·『대전회통』이 독립된 책으로 들어 있지 않다(『경국대전』 본문은 『전록통고』와 그 증보판에 재수록되어 있다). 그래서 네 법전의 층을 나누는 일(1·4·6·7장)은 1.0으로 미룬다.</p>
+<h2>단위</h2>
+<ul>
+<li><strong>조목(條目):</strong> 典 아래의 제목 단위. 개방 XML의 level3.</li>
+<li><strong>조문:</strong> 책마다 다르다. 대전속록·대전후속록·수교집록·신보수교집록·전율통보는 본문이 있는 level4 노드, 전록통고는 본문이 있는 level5 노드다. 증보전록통고는 출처 묶음(level4) 안의 본문 ○ 항목이지만 단위가 불안정하다(신뢰도 4).</li>
+<li><strong>구간:</strong> 『전율통보』에서 출처 표지 하나가 덮는 연속 본문. 기본 집계 단위다.</li>
+<li><strong>한자 수:</strong> 본문과 주를 합한 한자 수. 권두·권말 제목 줄(「典律通補 卷之N」)은 뺐다. 『전율통보』의 크기는 5장과 같은 범위로, 각 권 목록(6조목)도 뺐다.</li>
+</ul>
+<h2>『전율통보』 표지 읽기</h2>
+<ol>
+<li>표지는 덮는 글의 <strong>뒤</strong>에 붙는다. 사이 글 없이 잇따르는 표지는 이어 붙인 뒤 凡例의 13종으로 나눈다(「補」+「編」→ 補編).</li>
+<li><strong>이어 읽기(주):</strong> 표지 없는 글은 같은 조목 안에서 뒤에 오는 첫 표지를 받는다.</li>
+<li><strong>엄격한 읽기:</strong> 노드가 표지 없이 끝나면 「표지 없음」으로 둔다(18.0%).</li>
+<li><strong>되돌림:</strong> 노드 안에서 표지 뒤에 남은 글은 그 노드의 첫 표지를 받는다.</li>
+<li><strong>겹친 표지:</strong> 둘 이상 붙은 글은 「복수」로 따로 센다. 민감도로 균등 분할과 포함 기준을 함께 낸다. 균등 분할은 출처 수로 나누고, 같은 표지가 한 구간에 두 번 찍혀도 출처 하나로 센다.</li>
+<li><strong>대상 아님:</strong> 별편, 각 권 목록, 凡例·跋, 권 제목 줄.</li>
+<li>「褊」은 「編」의 오자로 읽는다(2곳, 잠정). 판독하지 못한 표지 2곳(續+䌡, 五禮+禮+補)은 불규칙으로 남긴다.</li>
+</ol>
+<h2>수교 날짜</h2>
+<ul>
+<li>본문에서 「연호+연차」 또는 「연호+간지」 뒤 40자 안에 受敎·承傳이 오는 문자열을 뽑는다. 그 사이에 다른 연호나 마침표(。)·○가 끼면 잇지 않는다.</li>
+<li>국사편찬위원회 교감 〔 〕(바로 앞 같은 수의 글자를 고친다)·〈 〉(빠진 글자를 보충한다)를 반영한다. 날짜는 교감을 적용한 글에서 찾는다(연호나 「承」 자체를 고친 곳도 잡힌다).</li>
+<li>연도를 하나로 정할 수 없으면 차례로 ① 같은 조문(문장부호를 빼고 날짜 바로 앞 한자 12자가 같은 조문)이 실린 다른 편찬물의 날짜 ② 국사편찬위원회 노드 제목의 연도(그 노드에 날짜가 하나뿐일 때) ③ 확인된 편찬 연도보다 뒤의 해를 버리는 규칙으로 정한다. ①의 대조에는 문자열이나 교감만으로 연도가 정해진 날짜만 쓰고, ②·③으로 정한 연도를 다시 넘겨주지 않는다. 한 연호 안에 두 번 드는 간지는 제목 연도(②)를 먼저 본다. 그래도 남는 31개는 뺀다.</li>
+<li>편찬 연도보다 뒤의 날짜(4개)는 오기로 보고 뺀다.</li>
+<li>단위는 문자열이다. 수교 건수가 아니다. 월·일은 양력으로 바꾸지 않는다.</li>
+</ul>
+<h2>왕대 경계</h2>
+<p>실록 각 왕대의 「元年」 면 제목에 적힌 서기 연도를 그 왕의 첫해로 둔다(세조 1455, 성종 1470 …). 어떤 해는 그 해보다 늦지 않은 마지막 원년의 왕에게 속한다.</p>
+<h2>하지 않은 것</h2>
+<ul>
+<li>조선 법이 얼마나 복잡해졌는지 하나로 재는 종합 지수는 만들지 않았다.</li>
+<li>단위가 다른 숫자(조목·조문·문자열·기사)를 한 줄로 잇지 않았다.</li>
+<li>원인을 말하는 표현을 쓰지 않았다. 광해군 연간의 날짜가 적은 이유처럼 데이터로 답할 수 없는 것은 숫자만 적었다.</li>
+</ul>
+<h2>판</h2>
+<ul>
+<li><strong>0.9</strong> (2026-11) — 중간 편찬물 일곱, 2·3·5장, 실록 속 법전, 신뢰도.</li>
+</ul></div></main>
+<footer>조선 법전 계보 · 판 0.9 · 생성 2026-11-14 · <a href="https://github.com/BowonKwon/Joseon-Code-Lineage">GitHub</a> · 다른 사이트 <a href="https://bowonkwon.github.io/">bowonkwon.github.io</a></footer>
+<script>(function(){var k="jcl-theme",r=document.documentElement,b=document.getElementById("theme");function ap(v){if(v)r.setAttribute("data-theme",v);else r.removeAttribute("data-theme");if(b)b.textContent=v==="dark"?"\u263E":v==="light"?"\u2600":"\u25D1"}var cur=localStorage.getItem(k)||"";ap(cur);if(b)b.addEventListener("click",function(){cur=cur===""?"light":cur==="light"?"dark":"";if(cur)localStorage.setItem(k,cur);else localStorage.removeItem(k);ap(cur)})})();</script></body></html>
