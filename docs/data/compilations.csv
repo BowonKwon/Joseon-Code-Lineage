@@ -3,6 +3,6 @@ jlawb_010,SR,大典續錄,대전속록,Daejeon songnok,1492,1,71,407,,level4,170
 jlawb_020,HS,大典後續錄,대전후속록,Daejeon husongnok,1543,1,57,350,,level4,15039,28.4,18,1507,1539
 jlawb_050,SG,受敎輯錄,수교집록,Sugyo jimnok,1698,1,63,806,,level4,40323,41.8,751,1414,1692
 jlawb_060,TJ,典錄通考,전록통고,Jeollok tonggo,1706,1,252,2408,,level5,149194,21.8,775,1414,1692
-jlawb_070,SB,新補受敎輯錄,신보수교집록,Sinbo sugyo jimnok,1743,0,93,1227,,level4,72630,35.3,1033,1543,1738
+jlawb_070,SB,新補受敎輯錄,신보수교집록,Sinbo sugyo jimnok,,0,93,1227,,level4,72630,35.3,1033,1543,1738
 jlawb_080,JT,增補典錄通考,증보전록통고,Jeungbo jeollok tonggo,,0,258,3890,,main-text ○ items (unstable),223005,26.2,1701,1414,1738
 jlawb_100,JY,典律通補,전율통보,Jeonyul tongbo,1786,1,120,1639,4471,level4,143565,27.5,0,,

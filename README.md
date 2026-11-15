@@ -47,6 +47,11 @@ The CSV files in `data/` (UTF-8) hold values counted for this site from two sour
 
 The site builds no composite index of legal complexity, does not splice counts in different units (headings, provisions, dated strings, articles) into one line, and makes no causal claims. A source mark records the source the compilers named, not the year a provision was first made.
 
+## 판 · Versions
+
+- **0.9.1** (2026-11-16) — 그래프 설명을 보강했습니다. 책 이름에 한글을 함께 적고, 축 이름·단위와 그래프마다 읽는 법을 더했습니다. 『신보수교집록』의 연도는 근거를 확인하지 못해 데이터 파일에서 비웠습니다(종전 1743). 그 밖의 수치는 바뀌지 않았습니다. · Chart explanations filled in: Hangul readings beside the book names, named axes with units, and a note on how to read each chart. The year of the Sinbo sugyo jimnok could not be confirmed and is now empty in the data file (it was 1743). No other value changed.
+- **0.9** (2026-11) — 중간 편찬물 일곱, 2·3·5장, 실록 속 법전, 신뢰도. · Seven intermediate compilations; Chapters 2, 3 and 5; Codes in the Sillok; Reliability.
+
 ## 라이선스 · License
 
 [LICENSE.md](LICENSE.md)
