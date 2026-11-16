@@ -68,7 +68,7 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 </thead>
 <tbody>
 <tr>
-<td>국사편찬위원회 「조선시대 법령자료」 개방 데이터(공공데이터포털 15060103) — 『大典續錄』·『大典後續錄』·『受敎輯錄』·『典錄通考』·『新補受敎輯錄』·『增補典錄通考』·『典律通補』 XML</td>
+<td>국사편찬위원회 「조선시대 법령자료」 개방 데이터(공공데이터포털 15060103) — 『大典續錄』·『大典後續錄』·『受敎輯錄』·『典錄通考』·『新補受敎輯錄』·『增補典錄通考』·『典律通補』, 7장의 『六典條例』 XML</td>
 <td>모든 장</td>
 <td>포털 표기는 공공누리 제1유형이나 설명문과 어긋나는 데가 있어, 이 판은 집계·ID·표지·한자 수·짧은 인용만 싣는다</td>
 </tr>
@@ -83,13 +83,23 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 <td>열람만 했다. 이미지를 싣지 않는다</td>
 </tr>
 <tr>
+<td>국사편찬위원회 한국사데이터베이스 「조선시대 법령자료」 『大典會通』 원문 화면(면마다 열어 저장, 2단계 항목 247면)</td>
+<td>6장</td>
+<td>이용 조건이 개인 연구용이라 집계·국편 항목 ID·짧은 인용만 싣는다. 사이트의 자동 수집 제한(robots.txt)에 따라 기계로 수집하지 않았다</td>
+</tr>
+<tr>
+<td>Internet Archive 『大典會通』(1865) UC 버클리 동아시아도서관 소장본 면 이미지</td>
+<td>6장, 신뢰도 6</td>
+<td>대조에만 썼다. 이미지를 싣지 않는다</td>
+</tr>
+<tr>
 <td>한국민족문화대백과사전</td>
-<td>법전 연도, 후속록 항목 수</td>
+<td>법전 연도, 후속록 항목 수, 『대전회통』 조목 수</td>
 <td>2차 정보로 표시</td>
 </tr>
 </tbody>
 </table></div>
-<p>이 개방 데이터에는 『경국대전』·『속대전』·『대전통편』·『대전회통』이 독립된 책으로 들어 있지 않다(『경국대전』 본문은 『전록통고』와 그 증보판에 재수록되어 있다). 그래서 네 법전의 층을 나누는 일(1·4·6·7장)은 1.0으로 미룬다.</p>
+<p>이 개방 데이터에는 『경국대전』·『속대전』·『대전통편』·『대전회통』이 독립된 책으로 들어 있지 않다(『경국대전』 본문은 『전록통고』와 그 증보판에 재수록되어 있다). 『대전회통』은 1.0에서 한국사데이터베이스의 원문 화면으로 셌다(6장). 앞 세 법전의 본문과 조문 단위로 맞대는 일(1·4장, 『경국대전』 조문의 존속과 개정)은 1.1로 미룬다.</p>
 <h2>단위</h2>
 <ul>
 <li><strong>조목(條目):</strong> 典 아래의 제목 단위. 개방 XML의 level3.</li>
@@ -106,6 +116,17 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 <li><strong>겹친 표지:</strong> 둘 이상 붙은 글은 「복수」로 따로 센다. 민감도로 균등 분할과 포함 기준을 함께 낸다. 균등 분할은 출처 수로 나누고, 같은 표지가 한 구간에 두 번 찍혀도 출처 하나로 센다.</li>
 <li><strong>대상 아님:</strong> 별편, 각 권 목록, 凡例·跋, 권 제목 줄.</li>
 <li>「褊」은 「編」의 오자로 읽는다(2곳, 잠정). 판독하지 못한 표지 2곳(續+䌡, 五禮+禮+補)은 불규칙으로 남긴다.</li>
+</ol>
+<h2>『대전회통』 표지 읽기</h2>
+<ol>
+<li><strong>단위:</strong> 국편 목차에서 하위가 없는 항목이 조문 하나다(2,509개, 그중 본문 2,489개). 조목은 목차 2단계 항목이다(234개, 목록·卷首 제외).</li>
+<li>표지(原·續·增·補)는 덮는 글의 <strong>앞</strong>에 붙는다. 구간은 표지에서 다음 표지 앞까지다. 한자 없이 맞붙은 표지(4곳)는 「복수 출처」로 묶는다.</li>
+<li><strong>이어 읽기(주):</strong> 표지 없는 조문은 같은 조목 안의 바로 앞 표지를 받는다. 조목 첫 표지 앞의 글(권 제목 등)은 어느 층에도 넣지 않고 글자 수에서도 뺀다.</li>
+<li><strong>엄격한 읽기:</strong> 표지가 바로 앞에 붙은 글만 그 층으로 센다.</li>
+<li><strong>관직 표:</strong> 京官職·外官職·雜職·土官職·符信 조목은 표지가 표 항목의 주석이라 한자 비율의 주 값에서 빼고 표지 수로만 센다.</li>
+<li><strong>인쇄본으로 고친 것:</strong> 병전 雜令 첫 조문에 국편 텍스트가 빠뜨린 續을 넣었다. 예전 문서 서식(文武官四品以上告身式 뒤의 24개, 국편 ID jlawa_403_0400~0630)은 첫 서식의 「下幷同」에 따라 原으로 읽고, 서식 안의 표지(「增 今則…」)는 그 문장만 덮는 주로 본다.</li>
+<li><strong>빼는 것:</strong> 소제목, 국편 주석 번호, 도장 자리(《印》).</li>
+<li><strong>조목이 처음 나타나는 층:</strong> 조목에 찍힌 표지 가운데 시간상 가장 이른 것(原&lt;續&lt;增&lt;補). 글이 뒤따르지 않는 표지도 센다.</li>
 </ol>
 <h2>수교 날짜</h2>
 <ul>
@@ -127,6 +148,7 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 <ul>
 <li><strong>0.9</strong> (2026-11) — 중간 편찬물 일곱, 2·3·5장, 실록 속 법전, 신뢰도.</li>
 <li><strong>0.9.1</strong> (2026-11-16) — 그래프 설명을 보강했다. 연표·막대·범례의 책 이름에 한글을 함께 적고, 출처 표지와 典 이름에 뜻을 붙였다. 축에 이름과 단위를 적고, 그래프마다 읽는 법과 보이는 것을 한두 문장으로 덧붙였다. 수교 날짜 그래프의 선은 그 책이 엮인 해가 든 10년에서 끝나고(편찬 연도를 확인하지 못한 『신보수교집록』은 가장 늦은 수교 날짜가 든 10년), 실록 그래프에는 법전이 편찬된 왕대를 표시했다. 『경국대전』 본문을 함께 싣는 두 책은 막대에 빗금을 쳤다. 처음·방법·데이터 면에 머리 요약을, 2·3·5장에 낱말 풀이를 두었다. 『신보수교집록』의 연도는 근거를 확인하지 못해 데이터 파일(<code>compilations.csv</code>)에서 비웠고(종전 1743), 3장에 추정 연도와 실록의 관련 기사 둘을 적었다. 실록 면 「핵심」에 『경국대전』이 편찬에 앞선 세조대에도 성종대와 같은 수로 나온다는 것을 더했다. 그 밖의 수치는 바뀌지 않았다.</li>
+<li><strong>1.0.0</strong> (2026-11) — 6장 『대전회통』의 네 층(표지 수, 층별 한자 비율, 조목이 처음 나타나는 층), 신뢰도 6, 7장 1865년 이후(『육전조례』, 공문식, 『형법대전』, 고종·순종실록 연도별 언급), 데이터 파일 다섯.</li>
 </ul></div></main>
-<footer>조선 법전 계보 · 판 0.9.1 · 생성 2026-11-16 · <a href="https://github.com/BowonKwon/Joseon-Code-Lineage">GitHub</a> · 다른 사이트 <a href="https://bowonkwon.github.io/">bowonkwon.github.io</a></footer>
+<footer>조선 법전 계보 · 판 1.0.0 · 생성 2026-11-16 · <a href="https://github.com/BowonKwon/Joseon-Code-Lineage">GitHub</a> · 다른 사이트 <a href="https://bowonkwon.github.io/">bowonkwon.github.io</a></footer>
 <script>(function(){var k="jcl-theme",r=document.documentElement,b=document.getElementById("theme");function ap(v){if(v)r.setAttribute("data-theme",v);else r.removeAttribute("data-theme");if(b)b.textContent=v==="dark"?"\u263E":v==="light"?"\u2600":"\u25D1"}var cur=localStorage.getItem(k)||"";ap(cur);if(b)b.addEventListener("click",function(){cur=cur===""?"light":cur==="light"?"dark":"";if(cur)localStorage.setItem(k,cur);else localStorage.removeItem(k);ap(cur)})})();</script></body></html>

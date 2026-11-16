@@ -68,7 +68,7 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 </thead>
 <tbody>
 <tr>
-<td>National Institute of Korean History, open data "Joseon legal materials" (data.go.kr 15060103): XML of the <em>Daejeon songnok</em>, <em>Daejeon husongnok</em>, <em>Sugyo jimnok</em>, <em>Jeollok tonggo</em>, <em>Sinbo sugyo jimnok</em>, <em>Jeungbo jeollok tonggo</em> and <em>Jeonyul tongbo</em></td>
+<td>National Institute of Korean History, open data "Joseon legal materials" (data.go.kr 15060103): XML of the <em>Daejeon songnok</em>, <em>Daejeon husongnok</em>, <em>Sugyo jimnok</em>, <em>Jeollok tonggo</em>, <em>Sinbo sugyo jimnok</em>, <em>Jeungbo jeollok tonggo</em> and <em>Jeonyul tongbo</em>, and the <em>Yukjeon jorye</em> of Chapter 7</td>
 <td>all chapters</td>
 <td>The portal lists KOGL Type 1, but parts of its description disagree; this version publishes only counts, IDs, marks, character counts and short quotations</td>
 </tr>
@@ -83,13 +83,23 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 <td>viewed only; no images are published</td>
 </tr>
 <tr>
+<td>National Institute of Korean History, Korean History Database, "Legal sources of the Joseon period": <em>Daejeon hoetong</em> (大典會通) pages (opened and saved one by one; 247 level-2 items)</td>
+<td>Chapter 6</td>
+<td>Use is limited to personal research, so only counts, NIKH item ids and short quotations are published. The site's robots.txt limits automated collection, and no automated collection was made</td>
+</tr>
+<tr>
+<td>Internet Archive, <em>Daejeon hoetong</em> (1865), copy of the C. V. Starr East Asian Library, UC Berkeley: page images</td>
+<td>Chapter 6, Reliability 6</td>
+<td>Used for comparison only; no images are published</td>
+</tr>
+<tr>
 <td>Encyclopedia of Korean Culture</td>
-<td>years of the codes; jomok of the <em>Husongnok</em></td>
+<td>years of the codes; jomok of the <em>Husongnok</em> and of the <em>Daejeon hoetong</em></td>
 <td>marked as secondary</td>
 </tr>
 </tbody>
 </table></div>
-<p>The open data holds none of the <em>Gyeongguk daejeon</em>, <em>Sok daejeon</em>, <em>Daejeon tongpyeon</em> and <em>Daejeon hoetong</em> as a book of its own (the <em>Jeollok tonggo</em> and its expansion reprint the text of the <em>Gyeongguk daejeon</em>). Splitting the four codes into layers (Chapters 1, 4, 6 and 7) waits for 1.0.</p>
+<p>The open data holds none of the <em>Gyeongguk daejeon</em>, <em>Sok daejeon</em>, <em>Daejeon tongpyeon</em> and <em>Daejeon hoetong</em> as a book of its own (the <em>Jeollok tonggo</em> and its expansion reprint the text of the <em>Gyeongguk daejeon</em>). In 1.0 the <em>Daejeon hoetong</em> was counted from the pages of the Korean History Database (Chapter 6). Aligning provisions with the text of the three earlier codes (Chapters 1 and 4; survival and revision of <em>Gyeongguk daejeon</em> provisions) waits for 1.1.</p>
 <h2>Units</h2>
 <ul>
 <li><strong>Jomok (條目):</strong> the headed section under a jeon; level3 of the open XML.</li>
@@ -106,6 +116,17 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 <li><strong>Combined marks:</strong> text with two or more marks is counted on its own; equal split and inclusion are given as sensitivities. The equal split divides by the number of distinct sources; a mark printed twice over one segment counts as one source.</li>
 <li><strong>Not a target:</strong> the Separate Volume, the tables of contents, the notes and postface, the volume heading lines.</li>
 <li>褊 is read as a miscopied 編 (two places, provisional). Two marks that could not be read (續+䌡, 五禮+禮+補) stay irregular.</li>
+</ol>
+<h2>Reading the marks of the Daejeon hoetong</h2>
+<ol>
+<li><strong>Units:</strong> an entry of the NIKH table of contents with no children is one provision (2,509, of which 2,489 in the six jeon). A jomok is a level-2 entry (234, tables of contents and front matter left out).</li>
+<li>A mark (原, 續, 增, 補) stands <strong>before</strong> the text it covers. A segment runs from a mark to the next. Marks standing together with no character between them (4 places) are kept together as "two or more".</li>
+<li><strong>Carry reading (main):</strong> a provision without a mark takes the mark just before it in the same jomok. Text before the first mark of a jomok (volume titles and the like) belongs to no layer and is left out of the character count.</li>
+<li><strong>Strict reading:</strong> only text that directly follows a mark counts for that layer.</li>
+<li><strong>Office tables:</strong> in the jomok 京官職, 外官職, 雜職, 土官職 and 符信, a mark annotates a table entry, so these are left out of the main character figure and counted by marks only.</li>
+<li><strong>Corrected from the print:</strong> 續, missing from the NIKH text at the head of the Military Code's 雜令, was added. The Rites Code's document forms (the 24 after 文武官四品以上告身式, NIKH ids jlawa_403_0400 to 0630) are read as 原 after the note 下幷同 on the first form; a mark inside a form (增 今則…) is a note covering its own sentence.</li>
+<li><strong>Left out:</strong> subheadings, NIKH note numbers, seal places (《印》).</li>
+<li><strong>Layer in which a jomok first appears:</strong> the earliest in time of the marks it carries (原 &lt; 續 &lt; 增 &lt; 補). A mark with no text after it counts.</li>
 </ol>
 <h2>Dates of royal instructions</h2>
 <ul>
@@ -127,6 +148,7 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 <ul>
 <li><strong>0.9</strong> (2026-11) — seven intermediate compilations; Chapters 2, 3 and 5; Codes in the Sillok; Reliability.</li>
 <li><strong>0.9.1</strong> (2026-11-16) — Chart explanations filled in. Book names in the charts carry their Hangul reading (Korean pages) or romanization; source marks and jeon carry their meaning. Axes are named, with units, and each chart has a sentence or two on how to read it and what it shows. The lines of the dated-instruction chart stop in the decade in which their book was compiled (for the Sinbo sugyo jimnok, whose year is unconfirmed, the decade of its latest dated instruction), and the Sillok chart marks the reign in which each code was compiled. The two books that reprint the Gyeongguk daejeon are hatched. The home, method and data pages have a short head summary, and Chapters 2, 3 and 5 a note on terms. The year of the Sinbo sugyo jimnok could not be confirmed and is now empty in the data file (<code>compilations.csv</code>; it was 1743); Chapter 3 gives the estimated year and two related articles of the Veritable Records. The key point of the Sillok page adds that the Gyeongguk daejeon is named as often under Sejo, before its compilation, as under Seongjong. No other value changed.</li>
+<li><strong>1.0.0</strong> (2026-11) — Chapter 6, the four layers of the <em>Daejeon hoetong</em> (marks, share of characters by layer, the layer in which each jomok first appears), Reliability 6, Chapter 7 after 1865 (Yukjeon jorye, the decree on official documents, the Hyeongbeop daejeon, mentions by year in the Gojong and Sunjong records), five data files.</li>
 </ul></div></main>
-<footer>Lineage of the Joseon Codes · Version 0.9.1 · built 2026-11-16 · <a href="https://github.com/BowonKwon/Joseon-Code-Lineage">GitHub</a> · Other sites <a href="https://bowonkwon.github.io/en/">bowonkwon.github.io</a></footer>
+<footer>Lineage of the Joseon Codes · Version 1.0.0 · built 2026-11-16 · <a href="https://github.com/BowonKwon/Joseon-Code-Lineage">GitHub</a> · Other sites <a href="https://bowonkwon.github.io/en/">bowonkwon.github.io</a></footer>
 <script>(function(){var k="jcl-theme",r=document.documentElement,b=document.getElementById("theme");function ap(v){if(v)r.setAttribute("data-theme",v);else r.removeAttribute("data-theme");if(b)b.textContent=v==="dark"?"\u263E":v==="light"?"\u2600":"\u25D1"}var cur=localStorage.getItem(k)||"";ap(cur);if(b)b.addEventListener("click",function(){cur=cur===""?"light":cur==="light"?"dark":"";if(cur)localStorage.setItem(k,cur);else localStorage.removeItem(k);ap(cur)})})();</script></body></html>
