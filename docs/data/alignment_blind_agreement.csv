@@ -1,0 +1,4 @@
+sample,n,judges_agree,kappa_j1_j2,auto_j1_agree,kappa_auto_j1,auto_j2_agree,kappa_auto_j2,n_consensus,auto_consensus_agree,kappa_auto_consensus
+A,120,0.9833,0.9778,0.95,0.9333,0.9333,0.9111,118,0.9492,0.9322
+B,40,1.0,,1.0,,1.0,,40,1.0,
+C,40,0.95,0.8671,0.675,0.35,0.625,0.25,38,0.6579,0.2963

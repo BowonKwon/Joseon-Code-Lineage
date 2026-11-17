@@ -50,12 +50,13 @@ details{margin-top:.6rem}summary{cursor:pointer;color:var(--fg2);font-size:.88re
 .pn{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:2.4rem;padding-top:1rem;font-size:.92rem}.pn a[rel=next]{margin-left:auto;text-align:right}.pn small{display:block;color:var(--fg3)}
 .files a{display:inline-block;font-size:.85rem;background:var(--bg2);border:1px solid var(--line2);border-radius:6px;padding:.15rem .55rem;margin:.2rem .3rem .2rem 0;color:var(--fg2)}
 footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;padding:1.2rem;text-align:center}
-@media(max-width:640px){.chart svg{min-width:900px}.chart svg text{font-size:13px}header{gap:.6rem}}
+@media(max-width:940px){.chart svg{min-width:900px}.chart svg text{font-size:13px}}
+@media(max-width:640px){header{gap:.6rem}}
 </style></head><body>
-<header><a class="brand" href="../en/index.html">Lineage of the Joseon Codes</a><nav><a href="../en/index.html">Home</a><a href="../en/ch2.html">Chapters</a><a href="../en/sillok.html">Codes in the Sillok</a><a href="../en/reliability.html" class="on">Reliability</a><a href="../en/method.html">Method</a><a href="../en/data.html">Data</a></nav>
+<header><a class="brand" href="../en/index.html">Lineage of the Joseon Codes</a><nav><a href="../en/index.html">Home</a><a href="../en/ch1.html">Chapters</a><a href="../en/sillok.html">Codes in the Sillok</a><a href="../en/reliability.html" class="on">Reliability</a><a href="../en/method.html">Method</a><a href="../en/data.html">Data</a></nav>
 <div class="right"><a class="hub" href="https://bowonkwon.github.io/en/">All public materials</a><button id="theme" class="theme" type="button" aria-label="Theme">◑</button><a class="lang" href="../ko/reliability.html">한국어</a></div></header>
 <main><h1>Reliability</h1><div class="prose"><blockquote>
-<p><strong>Key point.</strong> At the 183 places where two independent readings of 45 pages agree with each other, all 183 agree with the source marks in the open data. Dates computed separately agree with 149 of 150 strings; the one miss was a flaw in this site's extraction rule and has been fixed. Provision boundaries reach F1 of 0.94 or more in five compilations and 0.77 in the <em>Jeungbo jeollok tonggo</em>.</p>
+<p><strong>Key point.</strong> At the 183 places where two independent readings of 45 pages agree with each other, all 183 agree with the source marks in the open data. Dates computed separately agree with 149 of 150 strings; the one miss was a flaw in this site's extraction rule and has been fixed. Provision boundaries reach F1 of 0.94 or more in five compilations and 0.77 in the <em>Jeungbo jeollok tonggo</em>. In 1.1, the categories assigned by setting the four codes side by side agree with two blind judges at kappa 0.93 and 0.91.</p>
 </blockquote>
 <p>Rules and samples were fixed before each check. Results that fall short of those rules are reported as they are. Reading and date computation were done by large language model (LLM) coders, who were given only the page images or the source strings, never this site's automatic results.</p>
 <h2>1. Does a later mark cover unmarked text? — 30 places on the page images</h2>
@@ -276,7 +277,46 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 </tr>
 </tbody>
 </table></div>
-<p>The print divides provisions with ○ and a half-filled ◐; the NIKH text writes both as ○. The meaning of ◐ was not established.</p>
-<p>An independent reviewer (a language model from another company), given only the counting rules, recounted from the same source. Mark counts (jeon × mark), characters per layer (three readings × jeon × layer) and the layer in which each jomok first appears came out the same. The one difference was the total characters per jeon: the reviewer counted the volume-title characters of each jeon (about 14 per jeon) as unmarked; this site leaves them out, as the rules say. Shares move by 0.1 percentage point or less as a result. A second reviewer, in the check before publication, recounted the same values, except for 原 and 增 in the Rites Code (0.1 point), because that reviewer also read 用文字式, which is not a document form, as one.</p></div></main>
-<footer>Lineage of the Joseon Codes · Version 1.0.0 · built 2026-11-16 · <a href="https://github.com/BowonKwon/Joseon-Code-Lineage">GitHub</a> · Other sites <a href="https://bowonkwon.github.io/en/">bowonkwon.github.io</a></footer>
+<p>The print divides provisions with ○ and a half-filled ◐; the NIKH text writes both as ○. The meaning of ◐ was not established (for the 1.1 inquiry, see section 7).</p>
+<p>An independent reviewer (a language model from another company), given only the counting rules, recounted from the same source. Mark counts (jeon × mark), characters per layer (three readings × jeon × layer) and the layer in which each jomok first appears came out the same. The one difference was the total characters per jeon: the reviewer counted the volume-title characters of each jeon (about 14 per jeon) as unmarked; this site leaves them out, as the rules say. Shares move by 0.1 percentage point or less as a result. A second reviewer, in the check before publication, recounted the same values, except for 原 and 增 in the Rites Code (0.1 point), because that reviewer also read 用文字式, which is not a document form, as one.</p>
+<h2>7. Setting the four codes side by side: blind judgments and ◐ (1.1)</h2>
+<p>Samples were drawn as fixed in the rules document (random seed 20261117), and two judges (language models) who did not know of each other were given only the passages and the definitions of the categories, not the automatic categories or the rules document. The criterion is a kappa of 0.8 or more between the automatic result and the judges. Kappa expresses how far two judgments agree beyond what chance would give: 1 is full agreement, 0 the level of chance, and a value below 0 less agreement than chance.</p>
+<div class="wrap"><table>
+<thead>
+<tr>
+<th>Sample</th>
+<th style="text-align: right;">Size</th>
+<th>Judges with each other</th>
+<th>Automatic with judge 1 and 2</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Categories of <em>Gyeongguk daejeon</em> provisions against the <em>Daejeon hoetong</em> (30 per category, jeon in proportion to provisions)</td>
+<td style="text-align: right;">120</td>
+<td>kappa 0.98</td>
+<td>kappa 0.93 and 0.91 (0.93 with the 118 on which the judges agree)</td>
+<td>passes</td>
+</tr>
+<tr>
+<td>Stretches carrying a later mark but found as <em>Gyeongguk daejeon</em> text: really the same passage?</td>
+<td style="text-align: right;">40</td>
+<td>all 40 the same</td>
+<td>all 40 the same</td>
+<td>all 40 sampled stretches are the same passage (this is not a measured false-match rate of the whole alignment)</td>
+</tr>
+<tr>
+<td>Does 今廢 or 今革 abolish an office or post, or a rule? (automatic rule: jomok title and an office ending within the 10 characters before)</td>
+<td style="text-align: right;">40</td>
+<td>kappa 0.87</td>
+<td>kappa 0.35 and 0.25</td>
+<td>fails: no split is given, only totals</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A baseline from the same book.</strong> Set against the text of the <em>Gyeongguk daejeon</em> reprinted in the <em>Jeollok tonggo</em> of 1706 by the same rules, the NIKH <em>Gyeongguk daejeon</em> reaches a coverage of 84.7%, and 61.6% of its provisions come out with the same text. When the order of table cells and the place of notes differ, even the same text is not found. The shares in Chapter 6 are read against this baseline.</p>
+<p><strong>Stricter thresholds.</strong> Raising the lower limits from 4 and 8 characters to 6 and 12, the coverage of the <em>Gyeongguk daejeon</em> against the <em>Daejeon hoetong</em> moves from 80.4% to 77.0%, provisions with the same text from 682 to 680, and 'no match' from 87 to 108.</p>
+<p><strong>◐.</strong> On 20 pages drawn at random from the five volumes of the printed <em>Daejeon hoetong</em> (random seed 20261117), ◐ occurs on one page (three times), while ○ occurs on almost every page apart from the first two. All seven ◐ seen so far stand at the head of a provision in large characters. Four of them stand where, right after a small-print 增 note, the text returns to a provision of an earlier layer, which suggested that ◐ marks such places. Four such places predicted from the NIKH text were looked up on the page: one has ◐ and three have ○, so the hypothesis was dropped. The meaning of ◐ is not yet established. The pages were read by the writing session alone.</p></div></main>
+<footer>Lineage of the Joseon Codes · Version 1.1.0 · built 2026-11-17 · <a href="https://github.com/BowonKwon/Joseon-Code-Lineage">GitHub</a> · Other sites <a href="https://bowonkwon.github.io/en/">bowonkwon.github.io</a></footer>
 <script>(function(){var k="jcl-theme",r=document.documentElement,b=document.getElementById("theme");function ap(v){if(v)r.setAttribute("data-theme",v);else r.removeAttribute("data-theme");if(b)b.textContent=v==="dark"?"\u263E":v==="light"?"\u2600":"\u25D1"}var cur=localStorage.getItem(k)||"";ap(cur);if(b)b.addEventListener("click",function(){cur=cur===""?"light":cur==="light"?"dark":"";if(cur)localStorage.setItem(k,cur);else localStorage.removeItem(k);ap(cur)})})();</script></body></html>

@@ -1,0 +1,89 @@
+target,jeon,cat,provisions,han,pct
+1785 tongpyeon,六典,chars,95,6904,9.3
+1785 tongpyeon,六典,revised,163,24159,15.9
+1785 tongpyeon,六典,same,700,28549,68.5
+1785 tongpyeon,六典,unmatched,64,9163,6.3
+1785 tongpyeon,兵典,chars,20,1686,8.6
+1785 tongpyeon,兵典,revised,48,9141,20.7
+1785 tongpyeon,兵典,same,158,6197,68.1
+1785 tongpyeon,兵典,unmatched,6,1269,2.6
+1785 tongpyeon,刑典,chars,12,575,7.5
+1785 tongpyeon,刑典,revised,12,1356,7.5
+1785 tongpyeon,刑典,same,133,5553,82.6
+1785 tongpyeon,刑典,unmatched,4,547,2.5
+1785 tongpyeon,吏典,chars,12,875,5.9
+1785 tongpyeon,吏典,revised,54,8237,26.3
+1785 tongpyeon,吏典,same,95,3232,46.3
+1785 tongpyeon,吏典,unmatched,44,3653,21.5
+1785 tongpyeon,工典,chars,3,162,6.8
+1785 tongpyeon,工典,revised,5,1136,11.4
+1785 tongpyeon,工典,same,28,1349,63.6
+1785 tongpyeon,工典,unmatched,8,2703,18.2
+1785 tongpyeon,戶典,chars,15,1178,14.6
+1785 tongpyeon,戶典,revised,5,418,4.9
+1785 tongpyeon,戶典,same,82,3132,79.6
+1785 tongpyeon,戶典,unmatched,1,970,1.0
+1785 tongpyeon,禮典,chars,33,2428,11.9
+1785 tongpyeon,禮典,revised,39,3871,14.1
+1785 tongpyeon,禮典,same,204,9086,73.6
+1785 tongpyeon,禮典,unmatched,1,21,0.4
+1865 hoetong,六典,chars,91,6490,8.9
+1865 hoetong,六典,revised,162,22226,15.9
+1865 hoetong,六典,same,682,27743,66.7
+1865 hoetong,六典,unmatched,87,12316,8.5
+1865 hoetong,兵典,chars,19,1638,8.2
+1865 hoetong,兵典,revised,48,7456,20.7
+1865 hoetong,兵典,same,158,6168,68.1
+1865 hoetong,兵典,unmatched,7,3031,3.0
+1865 hoetong,刑典,chars,11,539,6.8
+1865 hoetong,刑典,revised,11,1289,6.8
+1865 hoetong,刑典,same,116,4734,72.0
+1865 hoetong,刑典,unmatched,23,1469,14.3
+1865 hoetong,吏典,chars,12,696,5.9
+1865 hoetong,吏典,revised,53,7978,25.9
+1865 hoetong,吏典,same,93,3201,45.4
+1865 hoetong,吏典,unmatched,47,4122,22.9
+1865 hoetong,工典,chars,3,162,6.8
+1865 hoetong,工典,revised,5,1136,11.4
+1865 hoetong,工典,same,28,1349,63.6
+1865 hoetong,工典,unmatched,8,2703,18.2
+1865 hoetong,戶典,chars,14,1111,13.6
+1865 hoetong,戶典,revised,5,418,4.9
+1865 hoetong,戶典,same,83,3199,80.6
+1865 hoetong,戶典,unmatched,1,970,1.0
+1865 hoetong,禮典,chars,32,2344,11.6
+1865 hoetong,禮典,revised,40,3949,14.4
+1865 hoetong,禮典,same,204,9092,73.6
+1865 hoetong,禮典,unmatched,1,21,0.4
+1706 jeollok tonggo (reprint),六典,chars,116,7982,11.4
+1706 jeollok tonggo (reprint),六典,revised,204,26478,20.0
+1706 jeollok tonggo (reprint),六典,same,630,24873,61.6
+1706 jeollok tonggo (reprint),六典,unmatched,72,9442,7.0
+1706 jeollok tonggo (reprint),兵典,chars,23,1761,9.9
+1706 jeollok tonggo (reprint),兵典,revised,58,9663,25.0
+1706 jeollok tonggo (reprint),兵典,same,146,5780,62.9
+1706 jeollok tonggo (reprint),兵典,unmatched,5,1089,2.2
+1706 jeollok tonggo (reprint),刑典,chars,19,840,11.8
+1706 jeollok tonggo (reprint),刑典,revised,19,2103,11.8
+1706 jeollok tonggo (reprint),刑典,same,119,4837,73.9
+1706 jeollok tonggo (reprint),刑典,unmatched,4,251,2.5
+1706 jeollok tonggo (reprint),吏典,chars,10,1015,4.9
+1706 jeollok tonggo (reprint),吏典,revised,50,7784,24.4
+1706 jeollok tonggo (reprint),吏典,same,96,3242,46.8
+1706 jeollok tonggo (reprint),吏典,unmatched,49,3956,23.9
+1706 jeollok tonggo (reprint),工典,chars,6,394,13.6
+1706 jeollok tonggo (reprint),工典,revised,6,1073,13.6
+1706 jeollok tonggo (reprint),工典,same,23,1155,52.3
+1706 jeollok tonggo (reprint),工典,unmatched,9,2728,20.5
+1706 jeollok tonggo (reprint),戶典,chars,21,1591,20.4
+1706 jeollok tonggo (reprint),戶典,revised,5,152,4.9
+1706 jeollok tonggo (reprint),戶典,same,74,2777,71.8
+1706 jeollok tonggo (reprint),戶典,unmatched,3,1178,2.9
+1706 jeollok tonggo (reprint),禮典,chars,37,2381,13.4
+1706 jeollok tonggo (reprint),禮典,revised,66,5703,23.8
+1706 jeollok tonggo (reprint),禮典,same,172,7082,62.1
+1706 jeollok tonggo (reprint),禮典,unmatched,2,240,0.7
+"1865 hoetong, without provisions whose NIKH collation note cites the Tongpyeon or Hoetong",六典,chars,57,3516,6.6
+"1865 hoetong, without provisions whose NIKH collation note cites the Tongpyeon or Hoetong",六典,revised,120,10589,13.9
+"1865 hoetong, without provisions whose NIKH collation note cites the Tongpyeon or Hoetong",六典,same,621,23603,71.7
+"1865 hoetong, without provisions whose NIKH collation note cites the Tongpyeon or Hoetong",六典,unmatched,68,8364,7.9
