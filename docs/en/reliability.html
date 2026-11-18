@@ -52,14 +52,33 @@ details{margin-top:.6rem}summary{cursor:pointer;color:var(--fg2);font-size:.88re
 footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;padding:1.2rem;text-align:center}
 @media(max-width:940px){.chart svg{min-width:900px}.chart svg text{font-size:13px}}
 @media(max-width:640px){header{gap:.6rem}}
+
+h2[id],h3[id],figure[id],nav.toc{scroll-margin-top:var(--hh,.9rem)}
+@media(min-width:900px){body{overflow-x:clip}h2[id],h3[id],figure[id],nav.toc{scroll-margin-top:var(--hh,6.9rem)}.sibs{top:var(--hh,6.9rem);max-height:calc(100vh - var(--hh,6.9rem) - .8rem)}}
+.hx{margin-left:.45rem;font-family:var(--body);font-size:.8em;font-weight:400;color:var(--fg3);opacity:0;transition:opacity .15s}.hx:hover{text-decoration:none;color:var(--accent)}
+h2:hover .hx,h3:hover .hx,.hx:focus-visible{opacity:1}@media(hover:none){.hx{opacity:.6}}
+nav.toc{border:1px solid var(--line);border-radius:10px;background:var(--card);padding:.7rem 1rem .8rem;margin:1.3rem 0 .2rem;font-size:.92rem;max-width:72ch}
+nav.toc b{display:block;font-size:.84rem;font-weight:600;color:var(--fg2);margin-bottom:.3rem}
+nav.toc ul{list-style:none;margin:0;padding:0;columns:2;column-gap:1.8rem;max-width:none}nav.toc li{margin:0;padding:.14rem 0;break-inside:avoid;line-height:1.5}
+@media(max-width:640px){nav.toc ul{columns:1}}
+.chlist{margin:.1rem 0 1rem;font-size:.92rem}.chlist summary{font-size:.92rem}.chlist summary small{color:var(--fg3);margin-left:.4rem}
+.chlist ol,.chlist .box{list-style:none;margin:.5rem 0 .4rem;padding:.6rem 1rem .7rem;border:1px solid var(--line);border-radius:10px;background:var(--card);max-width:72ch}
+.chlist li{margin:0;padding:.16rem 0;line-height:1.5}.chlist li small{color:var(--fg3);margin-left:.35rem;white-space:nowrap}
+.chlist a[aria-current]{color:var(--fg);font-weight:600}.chlist p{margin:.3rem 0 0;font-size:.88rem}
+.chlist .tree,.chlist .tree ul{list-style:none;margin:0;padding:0}.chlist .tree>li{padding:.3rem 0}.chlist .tree>li>a{font-weight:600}
+.chlist .tree ul{padding-left:1rem;font-size:.95em}.chlist .box b{display:block;margin:.7rem 0 .1rem;font-size:.84rem;font-weight:600;color:var(--fg2);border-top:1px solid var(--line2);padding-top:.6rem}
+.totoc{position:fixed;right:.9rem;bottom:.9rem;z-index:6;font-size:.84rem;font-weight:600;line-height:1;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.55rem .85rem;box-shadow:var(--shadow)}
+.totoc:hover{text-decoration:none;border-color:var(--accent);color:var(--accent)}
+.navjs .totoc{opacity:0;visibility:hidden;transition:opacity .15s,visibility .15s}.navjs .totoc.show{opacity:1;visibility:visible}
+@media print{.totoc,.hx{display:none}}
 </style></head><body>
-<header><a class="brand" href="../en/index.html">Lineage of the Joseon Codes</a><nav><a href="../en/index.html">Home</a><a href="../en/ch1.html">Chapters</a><a href="../en/sillok.html">Codes in the Sillok</a><a href="../en/reliability.html" class="on">Reliability</a><a href="../en/method.html">Method</a><a href="../en/data.html">Data</a></nav>
+<header><a class="brand" href="../en/index.html">Lineage of the Joseon Codes</a><nav><a href="../en/index.html">Home</a><a href="../en/index.html#chapters">Chapters</a><a href="../en/sillok.html">Codes in the Sillok</a><a href="../en/reliability.html" class="on">Reliability</a><a href="../en/method.html">Method</a><a href="../en/data.html">Data</a></nav>
 <div class="right"><a class="hub" href="https://bowonkwon.github.io/en/">All public materials</a><button id="theme" class="theme" type="button" aria-label="Theme">◑</button><a class="lang" href="../ko/reliability.html">한국어</a></div></header>
 <main><h1>Reliability</h1><div class="prose"><blockquote>
 <p><strong>Key point.</strong> At the 183 places where two independent readings of 45 pages agree with each other, all 183 agree with the source marks in the open data. Dates computed separately agree with 149 of 150 strings; the one miss was a flaw in this site's extraction rule and has been fixed. Provision boundaries reach F1 of 0.94 or more in five compilations and 0.77 in the <em>Jeungbo jeollok tonggo</em>. In 1.1, the categories assigned by setting the four codes side by side agree with two blind judges at kappa 0.93 and 0.91.</p>
 </blockquote>
 <p>Rules and samples were fixed before each check. Results that fall short of those rules are reported as they are. Reading and date computation were done by large language model (LLM) coders, who were given only the page images or the source strings, never this site's automatic results.</p>
-<h2>1. Does a later mark cover unmarked text? — 30 places on the page images</h2>
+<nav class="toc" id="toc" aria-label="On this page"><b>On this page</b><ul><li><a href="#r1-carry-over">1. Does a later mark cover unmarked text? — 30 places on the page images</a></li><li><a href="#r2-mark-reading">2. Reading the marks — 45 pages, two coders separately</a></li><li><a href="#r3-dates">3. Dates — 200 computed separately</a></li><li><a href="#r4-boundaries">4. Provision boundaries — 30 jomok</a></li><li><a href="#r5-published-figures">5. Against published figures</a></li><li><a href="#r6-hoetong">6. Daejeon hoetong — the 1865 print and an independent recount</a></li><li><a href="#r7-alignment">7. Setting the four codes side by side: blind judgments and ◐ (1.1)</a></li></ul></nav><h2 id="r1-carry-over">1. Does a later mark cover unmarked text? — 30 places on the page images<a class="hx" href="#r1-carry-over" aria-label="Link to the section ‘1. Does a later mark cover unmarked text? — 30 places on the page images’">#</a></h2>
 <p>Thirty places were viewed on the Kyujanggak page images (not downloaded). A page number N in the data links corresponds to image leaf (N−1)÷2, front (a) if N is odd, back (b) if even.</p>
 <div class="wrap"><table>
 <thead>
@@ -98,7 +117,7 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 </tbody>
 </table></div>
 <p>In the 16 unmarked places, marks present on the page but missing from the data: 0 (Wilson 95% upper bound 19%). Under the rule fixed beforehand (fewer than two), the carry reading is used as the main reading.</p>
-<h2>2. Reading the marks — 45 pages, two coders separately</h2>
+<h2 id="r2-mark-reading">2. Reading the marks — 45 pages, two coders separately<a class="hx" href="#r2-mark-reading" aria-label="Link to the section ‘2. Reading the marks — 45 pages, two coders separately’">#</a></h2>
 <p>Forty-five pages of the six jeon were drawn in proportion to the pages of each jeon (about 300 segments). Each coder wrote down the marks in reading order together with the characters just before each mark.</p>
 <div class="wrap"><table>
 <thead>
@@ -139,7 +158,7 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 <p>Ranges in brackets are 95% intervals from a bootstrap that resamples pages (2,000 draws). The rule fixed beforehand (agreement of 95% or more, marks found only on the page 2% or less) was not met. Unpaired readings gather on pages of official lists and place names, where a mark is preceded by one character or none; matching by preceding characters fails there. The post hoc alignment by the order of marks is exploratory.</p>
 <p>At the 192 places read by both coders where neither marked a reading with "?", they agree with each other 95.3% of the time (Cohen's κ 0.945). <strong>At the 183 places where both coders read the same, all 183 agree with the data</strong> (no candidate data errors; 95% upper bound 2.1%). Every reading that disagrees with the data was made by one coder alone. The marks in the data are therefore used without correction.</p>
 <p>Limits: coder 2 enlarged the images on screen, coder 1 viewed them at the default size; coder 1 marked 191 rows as partly legible, coder 2 56. Both coders are models of the same family and may share mistakes.</p>
-<h2>3. Dates — 200 computed separately</h2>
+<h2 id="r3-dates">3. Dates — 200 computed separately<a class="hx" href="#r3-dates" aria-label="Link to the section ‘3. Dates — 200 computed separately’">#</a></h2>
 <p>The coder was given only the compilation's name and the date string and asked for the year.</p>
 <div class="wrap"><table>
 <thead>
@@ -169,7 +188,7 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 </table></div>
 <p>The miss was 「康熙丁酉改以杖一百流三千里 嘉靖三年八月初一日本曹受敎」: the amendment date in front (1717) swallowed the instruction date behind it (1524). Strings are no longer joined across a second era name. One rule was added from the coder's notes: when a sexagenary year falls in two years, a year later than the checked year of compilation is dropped.</p>
 <p>The years the Institute's editors wrote in the node titles of the <em>Sugyo jimnok</em> and <em>Sinbo sugyo jimnok</em> agree with this site's years at all 1,723 nodes that have a title year and a single date whose year was set from the string alone. The editors read the same strings, though, so errors in a string itself are not caught by this comparison.</p>
-<h2>4. Provision boundaries — 30 jomok</h2>
+<h2 id="r4-boundaries">4. Provision boundaries — 30 jomok<a class="hx" href="#r4-boundaries" aria-label="Link to the section ‘4. Provision boundaries — 30 jomok’">#</a></h2>
 <p>A coder divided into provisions the text of each jomok, with node boundaries, numbers and marks removed.</p>
 <div class="wrap"><table>
 <thead>
@@ -208,7 +227,7 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 </tbody>
 </table></div>
 <p>Overall F1 was 0.870, below the rule fixed beforehand (0.9). In the <em>Jeonyul tongbo</em> the coder's extra splits never exceed the number of circles inside notes in each jomok: the input mixed text and notes. This site uses level4 nodes that carry text (1,639 provisions) and also gives the count adding the circled items in their notes (4,471).</p>
-<h2>5. Against published figures</h2>
+<h2 id="r5-published-figures">5. Against published figures<a class="hx" href="#r5-published-figures" aria-label="Link to the section ‘5. Against published figures’">#</a></h2>
 <div class="wrap"><table>
 <thead>
 <tr>
@@ -245,7 +264,7 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 </tr>
 </tbody>
 </table></div>
-<h2>6. Daejeon hoetong — the 1865 print and an independent recount</h2>
+<h2 id="r6-hoetong">6. Daejeon hoetong — the 1865 print and an independent recount<a class="hx" href="#r6-hoetong" aria-label="Link to the section ‘6. Daejeon hoetong — the 1865 print and an independent recount’">#</a></h2>
 <p>The NIKH text was compared with pages of the 1865 edition (Internet Archive, copy of the C. V. Starr East Asian Library, UC Berkeley), read by one person.</p>
 <div class="wrap"><table>
 <thead>
@@ -279,7 +298,7 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 </table></div>
 <p>The print divides provisions with ○ and a half-filled ◐; the NIKH text writes both as ○. The meaning of ◐ was not established (for the 1.1 inquiry, see section 7).</p>
 <p>An independent reviewer (a language model from another company), given only the counting rules, recounted from the same source. Mark counts (jeon × mark), characters per layer (three readings × jeon × layer) and the layer in which each jomok first appears came out the same. The one difference was the total characters per jeon: the reviewer counted the volume-title characters of each jeon (about 14 per jeon) as unmarked; this site leaves them out, as the rules say. Shares move by 0.1 percentage point or less as a result. A second reviewer, in the check before publication, recounted the same values, except for 原 and 增 in the Rites Code (0.1 point), because that reviewer also read 用文字式, which is not a document form, as one.</p>
-<h2>7. Setting the four codes side by side: blind judgments and ◐ (1.1)</h2>
+<h2 id="r7-alignment">7. Setting the four codes side by side: blind judgments and ◐ (1.1)<a class="hx" href="#r7-alignment" aria-label="Link to the section ‘7. Setting the four codes side by side: blind judgments and ◐ (1.1)’">#</a></h2>
 <p>Samples were drawn as fixed in the rules document (random seed 20261117), and two judges (language models) who did not know of each other were given only the passages and the definitions of the categories, not the automatic categories or the rules document. The criterion is a kappa of 0.8 or more between the automatic result and the judges. Kappa expresses how far two judgments agree beyond what chance would give: 1 is full agreement, 0 the level of chance, and a value below 0 less agreement than chance.</p>
 <div class="wrap"><table>
 <thead>
@@ -317,6 +336,6 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 </table></div>
 <p><strong>A baseline from the same book.</strong> Set against the text of the <em>Gyeongguk daejeon</em> reprinted in the <em>Jeollok tonggo</em> of 1706 by the same rules, the NIKH <em>Gyeongguk daejeon</em> reaches a coverage of 84.7%, and 61.6% of its provisions come out with the same text. When the order of table cells and the place of notes differ, even the same text is not found. The shares in Chapter 6 are read against this baseline.</p>
 <p><strong>Stricter thresholds.</strong> Raising the lower limits from 4 and 8 characters to 6 and 12, the coverage of the <em>Gyeongguk daejeon</em> against the <em>Daejeon hoetong</em> moves from 80.4% to 77.0%, provisions with the same text from 682 to 680, and 'no match' from 87 to 108.</p>
-<p><strong>◐.</strong> On 20 pages drawn at random from the five volumes of the printed <em>Daejeon hoetong</em> (random seed 20261117), ◐ occurs on one page (three times), while ○ occurs on almost every page apart from the first two. All seven ◐ seen so far stand at the head of a provision in large characters. Four of them stand where, right after a small-print 增 note, the text returns to a provision of an earlier layer, which suggested that ◐ marks such places. Four such places predicted from the NIKH text were looked up on the page: one has ◐ and three have ○, so the hypothesis was dropped. The meaning of ◐ is not yet established. The pages were read by the writing session alone.</p></div></main>
-<footer>Lineage of the Joseon Codes · Version 1.1.0 · built 2026-11-17 · <a href="https://github.com/BowonKwon/Joseon-Code-Lineage">GitHub</a> · Other sites <a href="https://bowonkwon.github.io/en/">bowonkwon.github.io</a></footer>
-<script>(function(){var k="jcl-theme",r=document.documentElement,b=document.getElementById("theme");function ap(v){if(v)r.setAttribute("data-theme",v);else r.removeAttribute("data-theme");if(b)b.textContent=v==="dark"?"\u263E":v==="light"?"\u2600":"\u25D1"}var cur=localStorage.getItem(k)||"";ap(cur);if(b)b.addEventListener("click",function(){cur=cur===""?"light":cur==="light"?"dark":"";if(cur)localStorage.setItem(k,cur);else localStorage.removeItem(k);ap(cur)})})();</script></body></html>
+<p><strong>◐.</strong> On 20 pages drawn at random from the five volumes of the printed <em>Daejeon hoetong</em> (random seed 20261117), ◐ occurs on one page (three times), while ○ occurs on almost every page apart from the first two. All seven ◐ seen so far stand at the head of a provision in large characters. Four of them stand where, right after a small-print 增 note, the text returns to a provision of an earlier layer, which suggested that ◐ marks such places. Four such places predicted from the NIKH text were looked up on the page: one has ◐ and three have ○, so the hypothesis was dropped. The meaning of ◐ is not yet established. The pages were read by the writing session alone.</p><a class="totoc" href="#toc" aria-label="Back to the section list of this page">↑ Contents</a></div></main>
+<footer>Lineage of the Joseon Codes · Version 1.1.1 · built 2026-11-18 · <a href="https://github.com/BowonKwon/Joseon-Code-Lineage">GitHub</a> · Other sites <a href="https://bowonkwon.github.io/en/">bowonkwon.github.io</a></footer>
+<script>(function(){var k="jcl-theme",r=document.documentElement,b=document.getElementById("theme");function ap(v){if(v)r.setAttribute("data-theme",v);else r.removeAttribute("data-theme");if(b)b.textContent=v==="dark"?"\u263E":v==="light"?"\u2600":"\u25D1"}var cur=localStorage.getItem(k)||"";ap(cur);if(b)b.addEventListener("click",function(){cur=cur===""?"light":cur==="light"?"dark":"";if(cur)localStorage.setItem(k,cur);else localStorage.removeItem(k);ap(cur)})})();(function(){var d=document,r=d.documentElement,h=d.querySelector("header"),SF=900,m=SF&&window.matchMedia?matchMedia("(min-width:"+SF+"px)"):null;r.classList.add("navjs");function gap(){var on=h&&m&&m.matches&&window.CSS&&CSS.supports&&CSS.supports("overflow-x","clip");r.style.setProperty("--hh",on?(h.offsetHeight+12)+"px":".9rem")}gap();addEventListener("resize",gap);addEventListener("load",gap);var c=d.querySelector("nav.toc"),p=d.querySelector(".totoc");function pill(){p.classList.toggle("show",c.getBoundingClientRect().bottom<0)}if(c&&p){addEventListener("scroll",pill,{passive:true});addEventListener("resize",pill);pill()}var ls=d.querySelectorAll("header a.lang,header .lang a");for(var i=0;i<ls.length;i++)(function(l){l.addEventListener("click",function(){if(location.hash&&(l.getAttribute("href")||"").indexOf("http")!==0)l.href=l.href.split("#")[0]+location.hash})})(ls[i])})();</script></body></html>

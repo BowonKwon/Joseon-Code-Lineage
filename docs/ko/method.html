@@ -52,13 +52,32 @@ details{margin-top:.6rem}summary{cursor:pointer;color:var(--fg2);font-size:.88re
 footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;padding:1.2rem;text-align:center}
 @media(max-width:940px){.chart svg{min-width:900px}.chart svg text{font-size:13px}}
 @media(max-width:640px){header{gap:.6rem}}
+
+h2[id],h3[id],figure[id],nav.toc{scroll-margin-top:var(--hh,.9rem)}
+@media(min-width:900px){body{overflow-x:clip}h2[id],h3[id],figure[id],nav.toc{scroll-margin-top:var(--hh,6.9rem)}.sibs{top:var(--hh,6.9rem);max-height:calc(100vh - var(--hh,6.9rem) - .8rem)}}
+.hx{margin-left:.45rem;font-family:var(--body);font-size:.8em;font-weight:400;color:var(--fg3);opacity:0;transition:opacity .15s}.hx:hover{text-decoration:none;color:var(--accent)}
+h2:hover .hx,h3:hover .hx,.hx:focus-visible{opacity:1}@media(hover:none){.hx{opacity:.6}}
+nav.toc{border:1px solid var(--line);border-radius:10px;background:var(--card);padding:.7rem 1rem .8rem;margin:1.3rem 0 .2rem;font-size:.92rem;max-width:72ch}
+nav.toc b{display:block;font-size:.84rem;font-weight:600;color:var(--fg2);margin-bottom:.3rem}
+nav.toc ul{list-style:none;margin:0;padding:0;columns:2;column-gap:1.8rem;max-width:none}nav.toc li{margin:0;padding:.14rem 0;break-inside:avoid;line-height:1.5}
+@media(max-width:640px){nav.toc ul{columns:1}}
+.chlist{margin:.1rem 0 1rem;font-size:.92rem}.chlist summary{font-size:.92rem}.chlist summary small{color:var(--fg3);margin-left:.4rem}
+.chlist ol,.chlist .box{list-style:none;margin:.5rem 0 .4rem;padding:.6rem 1rem .7rem;border:1px solid var(--line);border-radius:10px;background:var(--card);max-width:72ch}
+.chlist li{margin:0;padding:.16rem 0;line-height:1.5}.chlist li small{color:var(--fg3);margin-left:.35rem;white-space:nowrap}
+.chlist a[aria-current]{color:var(--fg);font-weight:600}.chlist p{margin:.3rem 0 0;font-size:.88rem}
+.chlist .tree,.chlist .tree ul{list-style:none;margin:0;padding:0}.chlist .tree>li{padding:.3rem 0}.chlist .tree>li>a{font-weight:600}
+.chlist .tree ul{padding-left:1rem;font-size:.95em}.chlist .box b{display:block;margin:.7rem 0 .1rem;font-size:.84rem;font-weight:600;color:var(--fg2);border-top:1px solid var(--line2);padding-top:.6rem}
+.totoc{position:fixed;right:.9rem;bottom:.9rem;z-index:6;font-size:.84rem;font-weight:600;line-height:1;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.55rem .85rem;box-shadow:var(--shadow)}
+.totoc:hover{text-decoration:none;border-color:var(--accent);color:var(--accent)}
+.navjs .totoc{opacity:0;visibility:hidden;transition:opacity .15s,visibility .15s}.navjs .totoc.show{opacity:1;visibility:visible}
+@media print{.totoc,.hx{display:none}}
 </style></head><body>
-<header><a class="brand" href="../ko/index.html">조선 법전 계보</a><nav><a href="../ko/index.html">처음</a><a href="../ko/ch1.html">장</a><a href="../ko/sillok.html">실록 속 법전</a><a href="../ko/reliability.html">신뢰도</a><a href="../ko/method.html" class="on">방법</a><a href="../ko/data.html">데이터</a></nav>
+<header><a class="brand" href="../ko/index.html">조선 법전 계보</a><nav><a href="../ko/index.html">처음</a><a href="../ko/index.html#chapters">장</a><a href="../ko/sillok.html">실록 속 법전</a><a href="../ko/reliability.html">신뢰도</a><a href="../ko/method.html" class="on">방법</a><a href="../ko/data.html">데이터</a></nav>
 <div class="right"><a class="hub" href="https://bowonkwon.github.io/">공개 자료 허브</a><button id="theme" class="theme" type="button" aria-label="테마">◑</button><a class="lang" href="../en/method.html">English</a></div></header>
 <main><h1>방법</h1><div class="prose"><blockquote>
 <p><strong>이 면.</strong> 어떤 원천을 썼는지, 조목·조문·구간·한자 수를 무엇으로 세었는지, 『전율통보』의 출처 표지와 수교 날짜를 어떤 규칙으로 읽었는지 적는다.</p>
 </blockquote>
-<h2>원천</h2>
+<nav class="toc" id="toc" aria-label="이 면의 절"><b>이 면의 절</b><ul><li><a href="#sources">원천</a></li><li><a href="#units">단위</a></li><li><a href="#jeonyul-marks">『전율통보』 표지 읽기</a></li><li><a href="#hoetong-marks">『대전회통』 표지 읽기</a></li><li><a href="#alignment">네 법전 맞대기 (1.1)</a></li><li><a href="#dates">수교 날짜</a></li><li><a href="#reigns">왕대 경계</a></li><li><a href="#not-done">하지 않은 것</a></li><li><a href="#versions">판</a></li></ul></nav><h2 id="sources">원천<a class="hx" href="#sources" aria-label="‘원천’ 절로 바로 가는 링크">#</a></h2>
 <div class="wrap"><table>
 <thead>
 <tr>
@@ -101,14 +120,14 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 </tbody>
 </table></div>
 <p>이 개방 데이터에는 『경국대전』·『속대전』·『대전통편』·『대전회통』이 독립된 책으로 들어 있지 않다(『경국대전』 본문은 『전록통고』와 그 증보판에 재수록되어 있다). 네 법전은 한국사데이터베이스의 원문 화면으로 셌다(1.0은 『대전회통』, 1.1은 네 법전 모두). 개방 데이터의 『전록통고』가 다시 실은 『경국대전』은 1.1에서 비교의 기준선으로만 썼다(6장).</p>
-<h2>단위</h2>
+<h2 id="units">단위<a class="hx" href="#units" aria-label="‘단위’ 절로 바로 가는 링크">#</a></h2>
 <ul>
 <li><strong>조목(條目):</strong> 典 아래의 제목 단위. 개방 XML의 level3.</li>
 <li><strong>조문:</strong> 책마다 다르다. 대전속록·대전후속록·수교집록·신보수교집록·전율통보는 본문이 있는 level4 노드, 전록통고는 본문이 있는 level5 노드다. 증보전록통고는 출처 묶음(level4) 안의 본문 ○ 항목이지만 단위가 불안정하다(신뢰도 4).</li>
 <li><strong>구간:</strong> 『전율통보』에서 출처 표지 하나가 덮는 연속 본문. 기본 집계 단위다.</li>
 <li><strong>한자 수:</strong> 본문과 주를 합한 한자 수. 권두·권말 제목 줄(「典律通補 卷之N」)은 뺐다. 『전율통보』의 크기는 5장과 같은 범위로, 각 권 목록(6조목)도 뺐다.</li>
 </ul>
-<h2>『전율통보』 표지 읽기</h2>
+<h2 id="jeonyul-marks">『전율통보』 표지 읽기<a class="hx" href="#jeonyul-marks" aria-label="‘『전율통보』 표지 읽기’ 절로 바로 가는 링크">#</a></h2>
 <ol>
 <li>표지는 덮는 글의 <strong>뒤</strong>에 붙는다. 사이 글 없이 잇따르는 표지는 이어 붙인 뒤 凡例의 13종으로 나눈다(「補」+「編」→ 補編).</li>
 <li><strong>이어 읽기(주):</strong> 표지 없는 글은 같은 조목 안에서 뒤에 오는 첫 표지를 받는다.</li>
@@ -118,7 +137,7 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 <li><strong>대상 아님:</strong> 별편, 각 권 목록, 凡例·跋, 권 제목 줄.</li>
 <li>「褊」은 「編」의 오자로 읽는다(2곳, 잠정). 판독하지 못한 표지 2곳(續+䌡, 五禮+禮+補)은 불규칙으로 남긴다.</li>
 </ol>
-<h2>『대전회통』 표지 읽기</h2>
+<h2 id="hoetong-marks">『대전회통』 표지 읽기<a class="hx" href="#hoetong-marks" aria-label="‘『대전회통』 표지 읽기’ 절로 바로 가는 링크">#</a></h2>
 <ol>
 <li><strong>단위:</strong> 국편 목차에서 하위가 없는 항목이 조문 하나다(2,509개, 그중 본문 2,489개). 조목은 목차 2단계 항목이다(234개, 목록·卷首 제외).</li>
 <li>표지(原·續·增·補)는 덮는 글의 <strong>앞</strong>에 붙는다. 구간은 표지에서 다음 표지 앞까지다. 한자 없이 맞붙은 표지(4곳)는 「복수 출처」로 묶는다.</li>
@@ -129,7 +148,7 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 <li><strong>빼는 것:</strong> 소제목, 국편 주석 번호, 도장 자리(《印》).</li>
 <li><strong>조목이 처음 나타나는 층:</strong> 조목에 찍힌 표지 가운데 시간상 가장 이른 것(原&lt;續&lt;增&lt;補). 글이 뒤따르지 않는 표지도 센다.</li>
 </ol>
-<h2>네 법전 맞대기 (1.1)</h2>
+<h2 id="alignment">네 법전 맞대기 (1.1)<a class="hx" href="#alignment" aria-label="‘네 법전 맞대기 (1.1)’ 절로 바로 가는 링크">#</a></h2>
 <p>규칙은 정렬을 돌리기 전에 저장소에 기록해 두었고(규칙 문서 v0.1), 원문을 글자 단위로 읽는 코드를 쓰며 v0.1이 정하지 않은 자리를 역시 정렬 전에 채웠다(v0.2). 고친 내용과 까닭은 규칙 문서 끝의 변경 기록에 있다.</p>
 <ol>
 <li><strong>읽기:</strong> 네 책 모두 같은 코드로 읽는다. 단위는 목차의 끝 항목이다. 권 머리 줄(「續大典 卷之一」 「資政殿 刪正」 「吏典」)·권 끝 줄(「續大典 卷之六 終」 포함)·간기, 소제목(<code>em</code>), 국편 교감주는 본문이 아니다. 예전 서식의 「下幷同」은 『대전통편』에도 걸었다.</li>
@@ -140,7 +159,7 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 <li><strong>민감도:</strong> 문턱을 4·8자에서 6·12자로 올린 값, 교감주가 『대전통편』·『대전회통』을 근거로 든 조문을 뺀 값(주의 글에 「通編」이나 「會通」이 든 것. 주는 바로 앞 글자를 담은 조문에 붙이고, 조목 첫 글자 앞의 주는 어느 조문에도 붙이지 않는다. 주는 화면에 놓인 자리마다 그 자리의 주 글로 읽는다 — 국편 화면에는 같은 번호가 서로 다른 두 주에 쓰인 곳이 있다. 뺀 156개는 데이터 면의 목록에 있다), 『전록통고』 재수록본과 맞댄 값을 데이터에 함께 둔다.</li>
 <li><strong>다른 셈:</strong> 今廢·今革은 글자열 그대로 센다(나온 횟수이고 조문 수가 아니다). 형벌 낱말은 정해 둔 정규식(笞N, 杖N, 徒N年, 流N里, 絞, 斬, 充軍, 定配, 全家徙邊, 梟示 — 斬衰·絞首 제외)으로 형전에서 센다. 법전을 부르는 말(原典·續典·大典·大明律·明律·依律·以…律論)은 책 이름 속 「大典」을 빼고 센다.</li>
 </ol>
-<h2>수교 날짜</h2>
+<h2 id="dates">수교 날짜<a class="hx" href="#dates" aria-label="‘수교 날짜’ 절로 바로 가는 링크">#</a></h2>
 <ul>
 <li>본문에서 「연호+연차」 또는 「연호+간지」 뒤 40자 안에 受敎·承傳이 오는 문자열을 뽑는다. 그 사이에 다른 연호나 마침표(。)·○가 끼면 잇지 않는다.</li>
 <li>국사편찬위원회 교감 〔 〕(바로 앞 같은 수의 글자를 고친다)·〈 〉(빠진 글자를 보충한다)를 반영한다. 날짜는 교감을 적용한 글에서 찾는다(연호나 「承」 자체를 고친 곳도 잡힌다).</li>
@@ -148,20 +167,21 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 <li>편찬 연도보다 뒤의 날짜(4개)는 오기로 보고 뺀다.</li>
 <li>단위는 문자열이다. 수교 건수가 아니다. 월·일은 양력으로 바꾸지 않는다.</li>
 </ul>
-<h2>왕대 경계</h2>
+<h2 id="reigns">왕대 경계<a class="hx" href="#reigns" aria-label="‘왕대 경계’ 절로 바로 가는 링크">#</a></h2>
 <p>실록 각 왕대의 「元年」 면 제목에 적힌 서기 연도를 그 왕의 첫해로 둔다(세조 1455, 성종 1470 …). 어떤 해는 그 해보다 늦지 않은 마지막 원년의 왕에게 속한다.</p>
-<h2>하지 않은 것</h2>
+<h2 id="not-done">하지 않은 것<a class="hx" href="#not-done" aria-label="‘하지 않은 것’ 절로 바로 가는 링크">#</a></h2>
 <ul>
 <li>조선 법이 얼마나 복잡해졌는지 하나로 재는 종합 지수는 만들지 않았다.</li>
 <li>단위가 다른 숫자(조목·조문·문자열·기사)를 한 줄로 잇지 않았다.</li>
 <li>원인을 말하는 표현을 쓰지 않았다. 광해군 연간의 날짜가 적은 이유처럼 데이터로 답할 수 없는 것은 숫자만 적었다.</li>
 </ul>
-<h2>판</h2>
+<h2 id="versions">판<a class="hx" href="#versions" aria-label="‘판’ 절로 바로 가는 링크">#</a></h2>
 <ul>
 <li><strong>0.9</strong> (2026-11) — 중간 편찬물 일곱, 2·3·5장, 실록 속 법전, 신뢰도.</li>
 <li><strong>0.9.1</strong> (2026-11-16) — 그래프 설명을 보강했다. 연표·막대·범례의 책 이름에 한글을 함께 적고, 출처 표지와 典 이름에 뜻을 붙였다. 축에 이름과 단위를 적고, 그래프마다 읽는 법과 보이는 것을 한두 문장으로 덧붙였다. 수교 날짜 그래프의 선은 그 책이 엮인 해가 든 10년에서 끝나고(편찬 연도를 확인하지 못한 『신보수교집록』은 가장 늦은 수교 날짜가 든 10년), 실록 그래프에는 법전이 편찬된 왕대를 표시했다. 『경국대전』 본문을 함께 싣는 두 책은 막대에 빗금을 쳤다. 처음·방법·데이터 면에 머리 요약을, 2·3·5장에 낱말 풀이를 두었다. 『신보수교집록』의 연도는 근거를 확인하지 못해 데이터 파일(<code>compilations.csv</code>)에서 비웠고(종전 1743), 3장에 추정 연도와 실록의 관련 기사 둘을 적었다. 실록 면 「핵심」에 『경국대전』이 편찬에 앞선 세조대에도 성종대와 같은 수로 나온다는 것을 더했다. 그 밖의 수치는 바뀌지 않았다.</li>
+<li><strong>1.1.1</strong> (2026-11) — 목차에서 장·절로 바로 가기. 장 면 머리에 장 목록을, 절이 셋 이상인 면에 절 목록을 두고, 절 제목마다 바로가기 링크를 달았다. 처음 면에는 장과 절 전체 목차가 있다. 넓은 화면에서는 위쪽 메뉴가 화면에 남는다. 본문과 수치는 그대로다.</li>
 <li><strong>1.1.0</strong> (2026-11) — 네 법전의 원문을 갖추어 1장(1397~1485)과 4장(『속대전』)을 쓰고, 6장에 「표지대로 이어졌나」를 더했다. 『육전조례』를 편찬물 표에 넣고, 7장에 『형법대전』의 짜임을 적었다. 그래프는 940px 폭까지 원래 크기로 보인다.</li>
 <li><strong>1.0.0</strong> (2026-11) — 6장 『대전회통』의 네 층(표지 수, 층별 한자 비율, 조목이 처음 나타나는 층), 신뢰도 6, 7장 1865년 이후(『육전조례』, 공문식, 『형법대전』, 고종·순종실록 연도별 언급), 데이터 파일 다섯.</li>
-</ul></div></main>
-<footer>조선 법전 계보 · 판 1.1.0 · 생성 2026-11-17 · <a href="https://github.com/BowonKwon/Joseon-Code-Lineage">GitHub</a> · 다른 사이트 <a href="https://bowonkwon.github.io/">bowonkwon.github.io</a></footer>
-<script>(function(){var k="jcl-theme",r=document.documentElement,b=document.getElementById("theme");function ap(v){if(v)r.setAttribute("data-theme",v);else r.removeAttribute("data-theme");if(b)b.textContent=v==="dark"?"\u263E":v==="light"?"\u2600":"\u25D1"}var cur=localStorage.getItem(k)||"";ap(cur);if(b)b.addEventListener("click",function(){cur=cur===""?"light":cur==="light"?"dark":"";if(cur)localStorage.setItem(k,cur);else localStorage.removeItem(k);ap(cur)})})();</script></body></html>
+</ul><a class="totoc" href="#toc" aria-label="이 면의 절 목록으로">↑ 목차</a></div></main>
+<footer>조선 법전 계보 · 판 1.1.1 · 생성 2026-11-18 · <a href="https://github.com/BowonKwon/Joseon-Code-Lineage">GitHub</a> · 다른 사이트 <a href="https://bowonkwon.github.io/">bowonkwon.github.io</a></footer>
+<script>(function(){var k="jcl-theme",r=document.documentElement,b=document.getElementById("theme");function ap(v){if(v)r.setAttribute("data-theme",v);else r.removeAttribute("data-theme");if(b)b.textContent=v==="dark"?"\u263E":v==="light"?"\u2600":"\u25D1"}var cur=localStorage.getItem(k)||"";ap(cur);if(b)b.addEventListener("click",function(){cur=cur===""?"light":cur==="light"?"dark":"";if(cur)localStorage.setItem(k,cur);else localStorage.removeItem(k);ap(cur)})})();(function(){var d=document,r=d.documentElement,h=d.querySelector("header"),SF=900,m=SF&&window.matchMedia?matchMedia("(min-width:"+SF+"px)"):null;r.classList.add("navjs");function gap(){var on=h&&m&&m.matches&&window.CSS&&CSS.supports&&CSS.supports("overflow-x","clip");r.style.setProperty("--hh",on?(h.offsetHeight+12)+"px":".9rem")}gap();addEventListener("resize",gap);addEventListener("load",gap);var c=d.querySelector("nav.toc"),p=d.querySelector(".totoc");function pill(){p.classList.toggle("show",c.getBoundingClientRect().bottom<0)}if(c&&p){addEventListener("scroll",pill,{passive:true});addEventListener("resize",pill);pill()}var ls=d.querySelectorAll("header a.lang,header .lang a");for(var i=0;i<ls.length;i++)(function(l){l.addEventListener("click",function(){if(location.hash&&(l.getAttribute("href")||"").indexOf("http")!==0)l.href=l.href.split("#")[0]+location.hash})})(ls[i])})();</script></body></html>

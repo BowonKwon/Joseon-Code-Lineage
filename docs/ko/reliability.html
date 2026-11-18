@@ -52,14 +52,33 @@ details{margin-top:.6rem}summary{cursor:pointer;color:var(--fg2);font-size:.88re
 footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;padding:1.2rem;text-align:center}
 @media(max-width:940px){.chart svg{min-width:900px}.chart svg text{font-size:13px}}
 @media(max-width:640px){header{gap:.6rem}}
+
+h2[id],h3[id],figure[id],nav.toc{scroll-margin-top:var(--hh,.9rem)}
+@media(min-width:900px){body{overflow-x:clip}h2[id],h3[id],figure[id],nav.toc{scroll-margin-top:var(--hh,6.9rem)}.sibs{top:var(--hh,6.9rem);max-height:calc(100vh - var(--hh,6.9rem) - .8rem)}}
+.hx{margin-left:.45rem;font-family:var(--body);font-size:.8em;font-weight:400;color:var(--fg3);opacity:0;transition:opacity .15s}.hx:hover{text-decoration:none;color:var(--accent)}
+h2:hover .hx,h3:hover .hx,.hx:focus-visible{opacity:1}@media(hover:none){.hx{opacity:.6}}
+nav.toc{border:1px solid var(--line);border-radius:10px;background:var(--card);padding:.7rem 1rem .8rem;margin:1.3rem 0 .2rem;font-size:.92rem;max-width:72ch}
+nav.toc b{display:block;font-size:.84rem;font-weight:600;color:var(--fg2);margin-bottom:.3rem}
+nav.toc ul{list-style:none;margin:0;padding:0;columns:2;column-gap:1.8rem;max-width:none}nav.toc li{margin:0;padding:.14rem 0;break-inside:avoid;line-height:1.5}
+@media(max-width:640px){nav.toc ul{columns:1}}
+.chlist{margin:.1rem 0 1rem;font-size:.92rem}.chlist summary{font-size:.92rem}.chlist summary small{color:var(--fg3);margin-left:.4rem}
+.chlist ol,.chlist .box{list-style:none;margin:.5rem 0 .4rem;padding:.6rem 1rem .7rem;border:1px solid var(--line);border-radius:10px;background:var(--card);max-width:72ch}
+.chlist li{margin:0;padding:.16rem 0;line-height:1.5}.chlist li small{color:var(--fg3);margin-left:.35rem;white-space:nowrap}
+.chlist a[aria-current]{color:var(--fg);font-weight:600}.chlist p{margin:.3rem 0 0;font-size:.88rem}
+.chlist .tree,.chlist .tree ul{list-style:none;margin:0;padding:0}.chlist .tree>li{padding:.3rem 0}.chlist .tree>li>a{font-weight:600}
+.chlist .tree ul{padding-left:1rem;font-size:.95em}.chlist .box b{display:block;margin:.7rem 0 .1rem;font-size:.84rem;font-weight:600;color:var(--fg2);border-top:1px solid var(--line2);padding-top:.6rem}
+.totoc{position:fixed;right:.9rem;bottom:.9rem;z-index:6;font-size:.84rem;font-weight:600;line-height:1;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.55rem .85rem;box-shadow:var(--shadow)}
+.totoc:hover{text-decoration:none;border-color:var(--accent);color:var(--accent)}
+.navjs .totoc{opacity:0;visibility:hidden;transition:opacity .15s,visibility .15s}.navjs .totoc.show{opacity:1;visibility:visible}
+@media print{.totoc,.hx{display:none}}
 </style></head><body>
-<header><a class="brand" href="../ko/index.html">조선 법전 계보</a><nav><a href="../ko/index.html">처음</a><a href="../ko/ch1.html">장</a><a href="../ko/sillok.html">실록 속 법전</a><a href="../ko/reliability.html" class="on">신뢰도</a><a href="../ko/method.html">방법</a><a href="../ko/data.html">데이터</a></nav>
+<header><a class="brand" href="../ko/index.html">조선 법전 계보</a><nav><a href="../ko/index.html">처음</a><a href="../ko/index.html#chapters">장</a><a href="../ko/sillok.html">실록 속 법전</a><a href="../ko/reliability.html" class="on">신뢰도</a><a href="../ko/method.html">방법</a><a href="../ko/data.html">데이터</a></nav>
 <div class="right"><a class="hub" href="https://bowonkwon.github.io/">공개 자료 허브</a><button id="theme" class="theme" type="button" aria-label="테마">◑</button><a class="lang" href="../en/reliability.html">English</a></div></header>
 <main><h1>신뢰도</h1><div class="prose"><blockquote>
 <p><strong>핵심.</strong> 서로 모르게 면 45장을 읽은 두 판독이 같게 읽은 183곳은 모두 개방 데이터의 출처 표지와 같았다. 수교 날짜는 따로 계산한 연도와 150개 중 149개가 같았고, 어긋난 하나는 이 사이트의 추출 규칙 결함이어서 고쳤다. 조문 분절은 다섯 책에서 F1 0.94 이상이었고 『증보전록통고』는 0.77이었다. 1.1에서 네 법전을 맞대어 나눈 조문 범주는 두 판정자의 블라인드 판정과 κ 0.93·0.91로 맞았다.</p>
 </blockquote>
 <p>판정 규칙과 표본은 확인 작업 전에 정해 두었다. 그 기준을 넘지 못한 항목도 그대로 적는다. 판독과 연도 계산은 언어모델(LLM) 코더가 했다. 코더에게는 원본 면 또는 원문 문자열만 주고, 이 사이트의 자동 추출 값은 주지 않았다.</p>
-<h2>1. 표지 없는 글은 뒤 표지가 덮는가 — 원본 면 30곳</h2>
+<nav class="toc" id="toc" aria-label="이 면의 절"><b>이 면의 절</b><ul><li><a href="#r1-carry-over">1. 표지 없는 글은 뒤 표지가 덮는가 — 원본 면 30곳</a></li><li><a href="#r2-mark-reading">2. 표지 판독 — 면 45장을 두 코더가 따로</a></li><li><a href="#r3-dates">3. 수교 날짜 — 200개를 따로 계산</a></li><li><a href="#r4-boundaries">4. 조문 분절 — 30조목</a></li><li><a href="#r5-published-figures">5. 문헌 숫자와 대조</a></li><li><a href="#r6-hoetong">6. 『대전회통』 — 인쇄본 대조와 독립 재현</a></li><li><a href="#r7-alignment">7. 네 법전 맞대기 — 블라인드 판정과 ◐ (1.1)</a></li></ul></nav><h2 id="r1-carry-over">1. 표지 없는 글은 뒤 표지가 덮는가 — 원본 면 30곳<a class="hx" href="#r1-carry-over" aria-label="‘1. 표지 없는 글은 뒤 표지가 덮는가 — 원본 면 30곳’ 절로 바로 가는 링크">#</a></h2>
 <p>규장각 원문 면 30곳을 열람했다(내려받지 않음). 데이터 링크의 면 번호 N은 이미지 (N−1)÷2 장, 홀수면 앞면(a)·짝수면 뒷면(b)이다.</p>
 <div class="wrap"><table>
 <thead>
@@ -98,7 +117,7 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 </tbody>
 </table></div>
 <p>표지 없는 글 16곳에서 「지면에는 있는데 데이터에 없는 표지」는 0곳(윌슨 95% 신뢰상한 19%)이었다. 미리 정한 기준(2곳 미만)에 따라 이어 읽기를 주 읽기로 쓴다.</p>
-<h2>2. 표지 판독 — 면 45장을 두 코더가 따로</h2>
+<h2 id="r2-mark-reading">2. 표지 판독 — 면 45장을 두 코더가 따로<a class="hx" href="#r2-mark-reading" aria-label="‘2. 표지 판독 — 면 45장을 두 코더가 따로’ 절로 바로 가는 링크">#</a></h2>
 <p>六典 면 45장을 典별 면 수에 비례해 뽑았다(해당 구간 약 300). 두 코더는 표지를 읽는 순서대로, 표지 바로 앞 글자와 함께 적었다.</p>
 <div class="wrap"><table>
 <thead>
@@ -139,7 +158,7 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 <p>괄호는 면을 단위로 다시 뽑은 부트스트랩(2,000회)의 95% 구간이다. 미리 정한 기준(일치율 95% 이상, 지면에만 있는 표지 2% 이하)은 넘지 못했다. 짝이 안 맞은 판독은 관직표·지명 목록처럼 표지 앞 글자가 한 자뿐이거나 없는 면에 몰려 있다. 앞 글자로 짝짓는 방법이 이런 면에서 통하지 않은 것이다. 표지 순서로 정렬한 사후 대조는 탐색적 결과다.</p>
 <p>두 코더가 함께 읽은 곳 가운데 두 코더 모두 「?」를 달지 않은 192곳에서 서로 일치는 95.3%, Cohen κ 0.945였다. <strong>두 코더가 같게 읽은 183곳은 183곳 모두 데이터와 같았다</strong>(데이터 오류 후보 0, 95% 신뢰상한 2.1%). 데이터와 어긋난 판독은 모두 한 코더만 그렇게 읽은 곳이었다. 그래서 데이터의 표지를 고치지 않고 쓴다.</p>
 <p>한계: 코더 2는 화면에서 이미지를 키워 보았고 코더 1은 기본 크기로 보았다. 「부분 판독」이 코더 1은 191행, 코더 2는 56행이다. 두 코더는 같은 계열의 모델이어서 같은 착각을 공유할 수 있다.</p>
-<h2>3. 수교 날짜 — 200개를 따로 계산</h2>
+<h2 id="r3-dates">3. 수교 날짜 — 200개를 따로 계산<a class="hx" href="#r3-dates" aria-label="‘3. 수교 날짜 — 200개를 따로 계산’ 절로 바로 가는 링크">#</a></h2>
 <p>코더에게 편찬물 이름과 날짜 문자열만 주고 서기 연도를 계산하게 했다.</p>
 <div class="wrap"><table>
 <thead>
@@ -169,7 +188,7 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 </table></div>
 <p>어긋난 하나는 「康熙丁酉改以杖一百流三千里 嘉靖三年八月初一日本曹受敎」였다. 앞의 개정 연도(1717)가 뒤의 수교 날짜(1524)를 삼켰다. 날짜와 受敎 사이에 다른 연호가 끼면 잇지 않도록 고쳤다. 코더의 메모에서 규칙 하나도 더했다. 간지가 두 해에 걸치면 확인된 편찬 연도보다 뒤의 해는 버린다.</p>
 <p>국사편찬위원회가 『수교집록』·『신보수교집록』 노드 제목에 적은 연도와 이 사이트의 연도는 1,723개(제목에 연도가 있고 날짜가 하나이며, 그 연도를 문자열만으로 정한 노드) 모두 같다. 다만 편집자도 같은 문자열을 읽었으므로 문자열 자체의 오기는 이 대조로 잡히지 않는다.</p>
-<h2>4. 조문 분절 — 30조목</h2>
+<h2 id="r4-boundaries">4. 조문 분절 — 30조목<a class="hx" href="#r4-boundaries" aria-label="‘4. 조문 분절 — 30조목’ 절로 바로 가는 링크">#</a></h2>
 <p>노드 경계·번호·표지를 지운 조목 본문을 코더가 조문으로 나눴다.</p>
 <div class="wrap"><table>
 <thead>
@@ -208,7 +227,7 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 </tbody>
 </table></div>
 <p>전체 F1은 0.870으로 미리 정한 기준(0.9)에 못 미쳤다. 『전율통보』에서 코더가 더 나눈 곳은 조목마다 주 안의 ○ 수보다 적거나 같았다. 코더에게 본문과 주를 섞어 준 입력 탓이다. 이 사이트는 본문이 있는 level4 노드(1,639조문)를 쓰고, 그 노드의 주 안 ○까지 센 수(4,471)를 함께 적는다.</p>
-<h2>5. 문헌 숫자와 대조</h2>
+<h2 id="r5-published-figures">5. 문헌 숫자와 대조<a class="hx" href="#r5-published-figures" aria-label="‘5. 문헌 숫자와 대조’ 절로 바로 가는 링크">#</a></h2>
 <div class="wrap"><table>
 <thead>
 <tr>
@@ -245,7 +264,7 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 </tr>
 </tbody>
 </table></div>
-<h2>6. 『대전회통』 — 인쇄본 대조와 독립 재현</h2>
+<h2 id="r6-hoetong">6. 『대전회통』 — 인쇄본 대조와 독립 재현<a class="hx" href="#r6-hoetong" aria-label="‘6. 『대전회통』 — 인쇄본 대조와 독립 재현’ 절로 바로 가는 링크">#</a></h2>
 <p>국사편찬위원회 텍스트를 1865년 간본(Internet Archive, UC 버클리 동아시아도서관 소장본) 면과 맞대 보았다. 한 사람이 읽었다.</p>
 <div class="wrap"><table>
 <thead>
@@ -279,7 +298,7 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 </table></div>
 <p>지면은 조문을 ○와 반쯤 칠한 ◐ 두 가지로 나누는데, 국편 텍스트는 둘 다 ○로 적는다. ◐의 뜻은 확인하지 못했다(1.1의 조사는 7절).</p>
 <p>셈 규칙만 받은 독립 검토자(다른 회사의 언어 모델)가 같은 원천에서 다시 세었다. 표지 수(典×표지), 층별 한자 수(세 가지 읽기×典×층), 조목이 처음 나타나는 층이 같은 값으로 나왔다. 다른 것은 典별 총 글자 수 하나였다. 검토자는 각 典의 권 제목 글자(典마다 14자 안팎)를 「표지 없음」으로 넣어 세었고, 이 사이트는 규칙대로 뺐다. 이 차이로 비율이 0.1%포인트 안에서 달라진다. 공개 전 검증에서 다른 검토자가 다시 센 값도 같았다. 예전에서만 原·增이 0.1%포인트 달랐는데, 그 검토자가 서식이 아닌 用文字式까지 서식으로 읽었기 때문이다.</p>
-<h2>7. 네 법전 맞대기 — 블라인드 판정과 ◐ (1.1)</h2>
+<h2 id="r7-alignment">7. 네 법전 맞대기 — 블라인드 판정과 ◐ (1.1)<a class="hx" href="#r7-alignment" aria-label="‘7. 네 법전 맞대기 — 블라인드 판정과 ◐ (1.1)’ 절로 바로 가는 링크">#</a></h2>
 <p>규칙 문서에 정해 둔 대로 표본을 뽑고(난수 씨앗 20261117 — 같은 표본을 다시 뽑을 수 있게 정해 둔 수), 서로 모르는 두 판정자(언어모델)에게 원문 조각과 범주의 정의만 주었다. 자동 범주와 규칙 문서는 주지 않았다. 기준은 자동 판정과 판정자의 κ 0.8 이상이다. κ(카파)는 두 판정이 우연히 맞을 몫을 빼고 얼마나 맞았는지를 나타낸 값으로, 1이면 완전히 같고 0이면 우연 수준이며, 우연보다 덜 맞으면 0보다 작아진다.</p>
 <div class="wrap"><table>
 <thead>
@@ -317,6 +336,6 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 </table></div>
 <p><strong>같은 책끼리의 기준선.</strong> 국편 『경국대전』을 1706년 『전록통고』가 다시 실은 글과 같은 규칙으로 맞대면 피복(원본 글자 가운데 상대 책에서 찾은 몫)은 84.7%, 같은 글인 조문은 61.6%다. 관직 표의 칸 순서와 주의 자리가 다르면 같은 글도 찾아지지 않는다. 6장의 비율은 이 기준선과 함께 읽는다.</p>
 <p><strong>문턱을 올리면.</strong> 공통 글의 하한을 4·8자에서 6·12자로 올리면 『경국대전』→『대전회통』 피복은 80.4%에서 77.0%로, 같은 글인 조문은 682개에서 680개로, 짝 없음은 87개에서 108개로 바뀐다.</p>
-<p><strong>◐.</strong> 인쇄본 『대전회통』 다섯 책에서 면 20장을 무작위로 뽑아(난수 씨앗 20261117) 보니 ◐가 있는 면은 1장(3개)이었고, 앞머리 2장을 뺀 거의 모든 면에 ○가 있었다. 지금까지 본 ◐ 7개는 모두 큰 글자 조문의 머리에 있었다. 이 가운데 넷이 「작은 글자 增 주 바로 뒤에 앞 층의 조문으로 돌아오는 자리」여서 그런 자리에 ◐를 쓴다는 가설을 세웠다. 국편 텍스트로 그런 자리를 예측해 4곳을 지면에서 찾아보니 ◐는 1곳, ○는 3곳이어서 이 가설을 버렸다. ◐의 뜻은 아직 확인하지 못했다. 판독은 작성 세션 한 명이 했다.</p></div></main>
-<footer>조선 법전 계보 · 판 1.1.0 · 생성 2026-11-17 · <a href="https://github.com/BowonKwon/Joseon-Code-Lineage">GitHub</a> · 다른 사이트 <a href="https://bowonkwon.github.io/">bowonkwon.github.io</a></footer>
-<script>(function(){var k="jcl-theme",r=document.documentElement,b=document.getElementById("theme");function ap(v){if(v)r.setAttribute("data-theme",v);else r.removeAttribute("data-theme");if(b)b.textContent=v==="dark"?"\u263E":v==="light"?"\u2600":"\u25D1"}var cur=localStorage.getItem(k)||"";ap(cur);if(b)b.addEventListener("click",function(){cur=cur===""?"light":cur==="light"?"dark":"";if(cur)localStorage.setItem(k,cur);else localStorage.removeItem(k);ap(cur)})})();</script></body></html>
+<p><strong>◐.</strong> 인쇄본 『대전회통』 다섯 책에서 면 20장을 무작위로 뽑아(난수 씨앗 20261117) 보니 ◐가 있는 면은 1장(3개)이었고, 앞머리 2장을 뺀 거의 모든 면에 ○가 있었다. 지금까지 본 ◐ 7개는 모두 큰 글자 조문의 머리에 있었다. 이 가운데 넷이 「작은 글자 增 주 바로 뒤에 앞 층의 조문으로 돌아오는 자리」여서 그런 자리에 ◐를 쓴다는 가설을 세웠다. 국편 텍스트로 그런 자리를 예측해 4곳을 지면에서 찾아보니 ◐는 1곳, ○는 3곳이어서 이 가설을 버렸다. ◐의 뜻은 아직 확인하지 못했다. 판독은 작성 세션 한 명이 했다.</p><a class="totoc" href="#toc" aria-label="이 면의 절 목록으로">↑ 목차</a></div></main>
+<footer>조선 법전 계보 · 판 1.1.1 · 생성 2026-11-18 · <a href="https://github.com/BowonKwon/Joseon-Code-Lineage">GitHub</a> · 다른 사이트 <a href="https://bowonkwon.github.io/">bowonkwon.github.io</a></footer>
+<script>(function(){var k="jcl-theme",r=document.documentElement,b=document.getElementById("theme");function ap(v){if(v)r.setAttribute("data-theme",v);else r.removeAttribute("data-theme");if(b)b.textContent=v==="dark"?"\u263E":v==="light"?"\u2600":"\u25D1"}var cur=localStorage.getItem(k)||"";ap(cur);if(b)b.addEventListener("click",function(){cur=cur===""?"light":cur==="light"?"dark":"";if(cur)localStorage.setItem(k,cur);else localStorage.removeItem(k);ap(cur)})})();(function(){var d=document,r=d.documentElement,h=d.querySelector("header"),SF=900,m=SF&&window.matchMedia?matchMedia("(min-width:"+SF+"px)"):null;r.classList.add("navjs");function gap(){var on=h&&m&&m.matches&&window.CSS&&CSS.supports&&CSS.supports("overflow-x","clip");r.style.setProperty("--hh",on?(h.offsetHeight+12)+"px":".9rem")}gap();addEventListener("resize",gap);addEventListener("load",gap);var c=d.querySelector("nav.toc"),p=d.querySelector(".totoc");function pill(){p.classList.toggle("show",c.getBoundingClientRect().bottom<0)}if(c&&p){addEventListener("scroll",pill,{passive:true});addEventListener("resize",pill);pill()}var ls=d.querySelectorAll("header a.lang,header .lang a");for(var i=0;i<ls.length;i++)(function(l){l.addEventListener("click",function(){if(location.hash&&(l.getAttribute("href")||"").indexOf("http")!==0)l.href=l.href.split("#")[0]+location.hash})})(ls[i])})();</script></body></html>

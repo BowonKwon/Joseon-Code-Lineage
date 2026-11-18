@@ -52,13 +52,32 @@ details{margin-top:.6rem}summary{cursor:pointer;color:var(--fg2);font-size:.88re
 footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;padding:1.2rem;text-align:center}
 @media(max-width:940px){.chart svg{min-width:900px}.chart svg text{font-size:13px}}
 @media(max-width:640px){header{gap:.6rem}}
+
+h2[id],h3[id],figure[id],nav.toc{scroll-margin-top:var(--hh,.9rem)}
+@media(min-width:900px){body{overflow-x:clip}h2[id],h3[id],figure[id],nav.toc{scroll-margin-top:var(--hh,6.9rem)}.sibs{top:var(--hh,6.9rem);max-height:calc(100vh - var(--hh,6.9rem) - .8rem)}}
+.hx{margin-left:.45rem;font-family:var(--body);font-size:.8em;font-weight:400;color:var(--fg3);opacity:0;transition:opacity .15s}.hx:hover{text-decoration:none;color:var(--accent)}
+h2:hover .hx,h3:hover .hx,.hx:focus-visible{opacity:1}@media(hover:none){.hx{opacity:.6}}
+nav.toc{border:1px solid var(--line);border-radius:10px;background:var(--card);padding:.7rem 1rem .8rem;margin:1.3rem 0 .2rem;font-size:.92rem;max-width:72ch}
+nav.toc b{display:block;font-size:.84rem;font-weight:600;color:var(--fg2);margin-bottom:.3rem}
+nav.toc ul{list-style:none;margin:0;padding:0;columns:2;column-gap:1.8rem;max-width:none}nav.toc li{margin:0;padding:.14rem 0;break-inside:avoid;line-height:1.5}
+@media(max-width:640px){nav.toc ul{columns:1}}
+.chlist{margin:.1rem 0 1rem;font-size:.92rem}.chlist summary{font-size:.92rem}.chlist summary small{color:var(--fg3);margin-left:.4rem}
+.chlist ol,.chlist .box{list-style:none;margin:.5rem 0 .4rem;padding:.6rem 1rem .7rem;border:1px solid var(--line);border-radius:10px;background:var(--card);max-width:72ch}
+.chlist li{margin:0;padding:.16rem 0;line-height:1.5}.chlist li small{color:var(--fg3);margin-left:.35rem;white-space:nowrap}
+.chlist a[aria-current]{color:var(--fg);font-weight:600}.chlist p{margin:.3rem 0 0;font-size:.88rem}
+.chlist .tree,.chlist .tree ul{list-style:none;margin:0;padding:0}.chlist .tree>li{padding:.3rem 0}.chlist .tree>li>a{font-weight:600}
+.chlist .tree ul{padding-left:1rem;font-size:.95em}.chlist .box b{display:block;margin:.7rem 0 .1rem;font-size:.84rem;font-weight:600;color:var(--fg2);border-top:1px solid var(--line2);padding-top:.6rem}
+.totoc{position:fixed;right:.9rem;bottom:.9rem;z-index:6;font-size:.84rem;font-weight:600;line-height:1;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.55rem .85rem;box-shadow:var(--shadow)}
+.totoc:hover{text-decoration:none;border-color:var(--accent);color:var(--accent)}
+.navjs .totoc{opacity:0;visibility:hidden;transition:opacity .15s,visibility .15s}.navjs .totoc.show{opacity:1;visibility:visible}
+@media print{.totoc,.hx{display:none}}
 </style></head><body>
-<header><a class="brand" href="../en/index.html">Lineage of the Joseon Codes</a><nav><a href="../en/index.html">Home</a><a href="../en/ch1.html">Chapters</a><a href="../en/sillok.html">Codes in the Sillok</a><a href="../en/reliability.html">Reliability</a><a href="../en/method.html" class="on">Method</a><a href="../en/data.html">Data</a></nav>
+<header><a class="brand" href="../en/index.html">Lineage of the Joseon Codes</a><nav><a href="../en/index.html">Home</a><a href="../en/index.html#chapters">Chapters</a><a href="../en/sillok.html">Codes in the Sillok</a><a href="../en/reliability.html">Reliability</a><a href="../en/method.html" class="on">Method</a><a href="../en/data.html">Data</a></nav>
 <div class="right"><a class="hub" href="https://bowonkwon.github.io/en/">All public materials</a><button id="theme" class="theme" type="button" aria-label="Theme">◑</button><a class="lang" href="../ko/method.html">한국어</a></div></header>
 <main><h1>Method</h1><div class="prose"><blockquote>
 <p><strong>This page.</strong> Which sources were used, what counts as a jomok, a provision, a segment and a character, and the rules by which the source marks of the <em>Jeonyul tongbo</em> and the dates of royal instructions were read.</p>
 </blockquote>
-<h2>Sources</h2>
+<nav class="toc" id="toc" aria-label="On this page"><b>On this page</b><ul><li><a href="#sources">Sources</a></li><li><a href="#units">Units</a></li><li><a href="#jeonyul-marks">Reading the marks of the Jeonyul tongbo</a></li><li><a href="#hoetong-marks">Reading the marks of the Daejeon hoetong</a></li><li><a href="#alignment">Setting the four codes side by side (1.1)</a></li><li><a href="#dates">Dates of royal instructions</a></li><li><a href="#reigns">Reign boundaries</a></li><li><a href="#not-done">What was not done</a></li><li><a href="#versions">Versions</a></li></ul></nav><h2 id="sources">Sources<a class="hx" href="#sources" aria-label="Link to the section ‘Sources’">#</a></h2>
 <div class="wrap"><table>
 <thead>
 <tr>
@@ -101,14 +120,14 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 </tbody>
 </table></div>
 <p>The open data holds none of the <em>Gyeongguk daejeon</em>, <em>Sok daejeon</em>, <em>Daejeon tongpyeon</em> and <em>Daejeon hoetong</em> as a book of its own (the <em>Jeollok tonggo</em> and its expansion reprint the text of the <em>Gyeongguk daejeon</em>). The four codes were counted from the pages of the Korean History Database (in 1.0 the <em>Daejeon hoetong</em>, in 1.1 all four). The text of the <em>Gyeongguk daejeon</em> reprinted in the <em>Jeollok tonggo</em> of the open data serves in 1.1 only as a baseline for comparison (Chapter 6).</p>
-<h2>Units</h2>
+<h2 id="units">Units<a class="hx" href="#units" aria-label="Link to the section ‘Units’">#</a></h2>
 <ul>
 <li><strong>Jomok (條目):</strong> the headed section under a jeon; level3 of the open XML.</li>
 <li><strong>Provision:</strong> differs by book. level4 nodes that carry text for the <em>Daejeon songnok</em>, <em>Daejeon husongnok</em>, <em>Sugyo jimnok</em>, <em>Sinbo sugyo jimnok</em> and <em>Jeonyul tongbo</em>; level5 nodes that carry text for the <em>Jeollok tonggo</em>. For the <em>Jeungbo jeollok tonggo</em> the main-text ○ items inside each source group (level4), an unstable unit (Reliability 4).</li>
 <li><strong>Segment:</strong> in the <em>Jeonyul tongbo</em>, a run of text covered by one source mark; the basic counting unit.</li>
 <li><strong>Characters:</strong> Chinese characters in text and notes together, without the volume heading lines (「典律通補 卷之N」). For the <em>Jeonyul tongbo</em> the size covers the same span as Chapter 5, leaving out the six tables of contents as well.</li>
 </ul>
-<h2>Reading the marks of the Jeonyul tongbo</h2>
+<h2 id="jeonyul-marks">Reading the marks of the Jeonyul tongbo<a class="hx" href="#jeonyul-marks" aria-label="Link to the section ‘Reading the marks of the Jeonyul tongbo’">#</a></h2>
 <ol>
 <li>A mark follows the text it covers. Marks that follow one another with no text between are joined and then split into the thirteen marks of the notes (「補」+「編」 → 補編).</li>
 <li><strong>Carry (main):</strong> unmarked text takes the next mark in the same jomok.</li>
@@ -118,7 +137,7 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 <li><strong>Not a target:</strong> the Separate Volume, the tables of contents, the notes and postface, the volume heading lines.</li>
 <li>褊 is read as a miscopied 編 (two places, provisional). Two marks that could not be read (續+䌡, 五禮+禮+補) stay irregular.</li>
 </ol>
-<h2>Reading the marks of the Daejeon hoetong</h2>
+<h2 id="hoetong-marks">Reading the marks of the Daejeon hoetong<a class="hx" href="#hoetong-marks" aria-label="Link to the section ‘Reading the marks of the Daejeon hoetong’">#</a></h2>
 <ol>
 <li><strong>Units:</strong> an entry of the NIKH table of contents with no children is one provision (2,509, of which 2,489 in the six jeon). A jomok is a level-2 entry (234, tables of contents and front matter left out).</li>
 <li>A mark (原, 續, 增, 補) stands <strong>before</strong> the text it covers. A segment runs from a mark to the next. Marks standing together with no character between them (4 places) are kept together as "two or more".</li>
@@ -129,7 +148,7 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 <li><strong>Left out:</strong> subheadings, NIKH note numbers, seal places (《印》).</li>
 <li><strong>Layer in which a jomok first appears:</strong> the earliest in time of the marks it carries (原 &lt; 續 &lt; 增 &lt; 補). A mark with no text after it counts.</li>
 </ol>
-<h2>Setting the four codes side by side (1.1)</h2>
+<h2 id="alignment">Setting the four codes side by side (1.1)<a class="hx" href="#alignment" aria-label="Link to the section ‘Setting the four codes side by side (1.1)’">#</a></h2>
 <p>The rules were recorded in the repository before the alignment was run (rules document v0.1); while writing the code that reads the text character by character, the places v0.1 left open were filled, also before the alignment (v0.2). What was changed and why is in the change log at the end of the rules document.</p>
 <ol>
 <li><strong>Reading:</strong> the four books are read by the same code. The unit is the last item of the table of contents. Volume-head lines (「續大典 卷之一」, 「資政殿 刪正」, 「吏典」), volume-end lines (「續大典 卷之六 終」 among them) and colophons, headings and NIKH collation notes are not text. The 下幷同 of the Rites Code's document forms is applied to the <em>Daejeon tongpyeon</em> as well.</li>
@@ -140,7 +159,7 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 <li><strong>Sensitivity:</strong> values with the thresholds raised from 4 and 8 to 6 and 12 characters, without the provisions whose collation notes cite the <em>Daejeon tongpyeon</em> or <em>Daejeon hoetong</em> (notes whose text contains 通編 or 會通; a note goes to the provision holding the character just before it, and a note before the first character of a jomok goes to none; each note is read with its own text at its own place, since the NIKH pages sometimes give two different notes the same number; the 156 provisions left out are listed on the Data page), and against the <em>Jeollok tonggo</em> reprint are in the data.</li>
 <li><strong>Other counts:</strong> 今廢 and 今革 are counted as strings (occurrences, not provisions). Words for punishments are counted in the Penal Code with fixed regular expressions (笞N, 杖N, 徒N年, 流N里, 絞, 斬, 充軍, 定配, 全家徙邊, 梟示; 斬衰 and 絞首 left out). Words naming a code (原典, 續典, 大典, 大明律, 明律, 依律, 以…律論) are counted with 大典 inside book titles left out.</li>
 </ol>
-<h2>Dates of royal instructions</h2>
+<h2 id="dates">Dates of royal instructions<a class="hx" href="#dates" aria-label="Link to the section ‘Dates of royal instructions’">#</a></h2>
 <ul>
 <li>Strings of an era name with a year or a sexagenary year, followed within 40 characters by 受敎 or 承傳, are extracted; a second era name, a full stop (。) or a ○ in between breaks the string.</li>
 <li>The Institute's corrections 〔 〕 (replacing the same number of characters just before) and supplied characters 〈 〉 are applied, and dates are sought in the corrected text (so corrections of the era name or of 承 itself are caught).</li>
@@ -148,20 +167,21 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 <li>Dates later than the compilation (4) are taken as copying errors and left out.</li>
 <li>The unit is the string, not the number of instructions. Months and days are not converted to the solar calendar.</li>
 </ul>
-<h2>Reign boundaries</h2>
+<h2 id="reigns">Reign boundaries<a class="hx" href="#reigns" aria-label="Link to the section ‘Reign boundaries’">#</a></h2>
 <p>The Western year written in the heading of each reign's first-year (元年) section of the Sillok is taken as that king's first year (Sejo 1455, Seongjong 1470 …). A year belongs to the king whose first year is the latest one not after it.</p>
-<h2>What was not done</h2>
+<h2 id="not-done">What was not done<a class="hx" href="#not-done" aria-label="Link to the section ‘What was not done’">#</a></h2>
 <ul>
 <li>No composite index of how complex Joseon law became.</li>
 <li>Numbers in different units (jomok, provisions, strings, articles) are not joined in one series.</li>
 <li>No causal wording. Where the data cannot answer — why there are so few dates from the years of Gwanghaegun — only the numbers are given.</li>
 </ul>
-<h2>Versions</h2>
+<h2 id="versions">Versions<a class="hx" href="#versions" aria-label="Link to the section ‘Versions’">#</a></h2>
 <ul>
 <li><strong>0.9</strong> (2026-11) — seven intermediate compilations; Chapters 2, 3 and 5; Codes in the Sillok; Reliability.</li>
 <li><strong>0.9.1</strong> (2026-11-16) — Chart explanations filled in. Book names in the charts carry their Hangul reading (Korean pages) or romanization; source marks and jeon carry their meaning. Axes are named, with units, and each chart has a sentence or two on how to read it and what it shows. The lines of the dated-instruction chart stop in the decade in which their book was compiled (for the Sinbo sugyo jimnok, whose year is unconfirmed, the decade of its latest dated instruction), and the Sillok chart marks the reign in which each code was compiled. The two books that reprint the Gyeongguk daejeon are hatched. The home, method and data pages have a short head summary, and Chapters 2, 3 and 5 a note on terms. The year of the Sinbo sugyo jimnok could not be confirmed and is now empty in the data file (<code>compilations.csv</code>; it was 1743); Chapter 3 gives the estimated year and two related articles of the Veritable Records. The key point of the Sillok page adds that the Gyeongguk daejeon is named as often under Sejo, before its compilation, as under Seongjong. No other value changed.</li>
+<li><strong>1.1.1</strong> (2026-11) — Straight from the contents to a chapter or section: a chapter list at the head of each chapter, a section list on pages with three or more sections, and a link on every section heading. The home page has full contents by chapter and section. On wide screens the top menu stays on screen. Text and numbers are unchanged.</li>
 <li><strong>1.1.0</strong> (2026-11) — With the text of the four codes, Chapters 1 (1397–1485) and 4 (<em>Sok daejeon</em>) are written and Chapter 6 gains 'Did the text follow the marks?'. The <em>Yukjeon jorye</em> joins the table of compilations, and Chapter 7 gives the structure of the <em>Hyeongbeop daejeon</em>. Charts keep their drawn size up to a width of 940 px.</li>
 <li><strong>1.0.0</strong> (2026-11) — Chapter 6, the four layers of the <em>Daejeon hoetong</em> (marks, share of characters by layer, the layer in which each jomok first appears), Reliability 6, Chapter 7 after 1865 (Yukjeon jorye, the decree on official documents, the Hyeongbeop daejeon, mentions by year in the Gojong and Sunjong records), five data files.</li>
-</ul></div></main>
-<footer>Lineage of the Joseon Codes · Version 1.1.0 · built 2026-11-17 · <a href="https://github.com/BowonKwon/Joseon-Code-Lineage">GitHub</a> · Other sites <a href="https://bowonkwon.github.io/en/">bowonkwon.github.io</a></footer>
-<script>(function(){var k="jcl-theme",r=document.documentElement,b=document.getElementById("theme");function ap(v){if(v)r.setAttribute("data-theme",v);else r.removeAttribute("data-theme");if(b)b.textContent=v==="dark"?"\u263E":v==="light"?"\u2600":"\u25D1"}var cur=localStorage.getItem(k)||"";ap(cur);if(b)b.addEventListener("click",function(){cur=cur===""?"light":cur==="light"?"dark":"";if(cur)localStorage.setItem(k,cur);else localStorage.removeItem(k);ap(cur)})})();</script></body></html>
+</ul><a class="totoc" href="#toc" aria-label="Back to the section list of this page">↑ Contents</a></div></main>
+<footer>Lineage of the Joseon Codes · Version 1.1.1 · built 2026-11-18 · <a href="https://github.com/BowonKwon/Joseon-Code-Lineage">GitHub</a> · Other sites <a href="https://bowonkwon.github.io/en/">bowonkwon.github.io</a></footer>
+<script>(function(){var k="jcl-theme",r=document.documentElement,b=document.getElementById("theme");function ap(v){if(v)r.setAttribute("data-theme",v);else r.removeAttribute("data-theme");if(b)b.textContent=v==="dark"?"\u263E":v==="light"?"\u2600":"\u25D1"}var cur=localStorage.getItem(k)||"";ap(cur);if(b)b.addEventListener("click",function(){cur=cur===""?"light":cur==="light"?"dark":"";if(cur)localStorage.setItem(k,cur);else localStorage.removeItem(k);ap(cur)})})();(function(){var d=document,r=d.documentElement,h=d.querySelector("header"),SF=900,m=SF&&window.matchMedia?matchMedia("(min-width:"+SF+"px)"):null;r.classList.add("navjs");function gap(){var on=h&&m&&m.matches&&window.CSS&&CSS.supports&&CSS.supports("overflow-x","clip");r.style.setProperty("--hh",on?(h.offsetHeight+12)+"px":".9rem")}gap();addEventListener("resize",gap);addEventListener("load",gap);var c=d.querySelector("nav.toc"),p=d.querySelector(".totoc");function pill(){p.classList.toggle("show",c.getBoundingClientRect().bottom<0)}if(c&&p){addEventListener("scroll",pill,{passive:true});addEventListener("resize",pill);pill()}var ls=d.querySelectorAll("header a.lang,header .lang a");for(var i=0;i<ls.length;i++)(function(l){l.addEventListener("click",function(){if(location.hash&&(l.getAttribute("href")||"").indexOf("http")!==0)l.href=l.href.split("#")[0]+location.hash})})(ls[i])})();</script></body></html>
